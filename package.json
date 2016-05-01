@@ -1,0 +1,39 @@
+{
+  "name": "main",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --settings settings.json",
+    "build:css": "lessc client/main.less client/main.css --autoprefix='last 2 versions'"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "less": "^2.6.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-router": "^2.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-meteor": "^3.5.2",
+    "eslint-plugin-react": "^5.0.1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb/base",
+      "plugin:meteor/recommended"
+    ]
+  }
+}
