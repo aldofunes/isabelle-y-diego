@@ -9,45 +9,47 @@ export default class Couple extends Component {
           <div className="column">
             <div className="ui fluid card">
               <div className="image">
-                <img src="http://placehold.it/500"/>
+                <img src="http://placehold.it/600x400"/>
               </div>
               <div className="content">
-                <a className="header">Kristy</a>
+                <a className="header">Isabelle Richards</a>
                 <div className="meta">
                   <span className="date">Joined in 2013</span>
                 </div>
                 <div className="description">
-                  Kristy is an art director living in New York.
+                  Isabelle se dedica a Ignigena potuss, tanquam primus agripeta.
                 </div>
               </div>
               <div className="extra content">
                 <a>
-                  <i className="user icon"></i>
+                  <i className="user icon"/>
                   22 Friends
                 </a>
               </div>
             </div>
           </div>
           <div className="ui vertical divider">
-            And
+            &nbsp;
+            <i className="heart icon"/>
+            &nbsp;
           </div>
           <div className="column">
             <div className="ui fluid card">
               <div className="image">
-                <img src="http://placehold.it/500"/>
+                <img src="http://placehold.it/600x400?text=Foto"/>
               </div>
               <div className="content">
-                <a className="header">Kristy</a>
+                <a className="header">Diego Zavala</a>
                 <div className="meta">
                   <span className="date">Joined in 2013</span>
                 </div>
                 <div className="description">
-                  Kristy is an art director living in New York.
+                  Sagas volare in oenipons! Gloss studere in magnum infernum!
                 </div>
               </div>
               <div className="extra content">
                 <a>
-                  <i className="user icon"></i>
+                  <i className="user icon"/>
                   22 Friends
                 </a>
               </div>

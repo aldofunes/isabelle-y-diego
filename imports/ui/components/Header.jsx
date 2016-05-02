@@ -9,7 +9,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <nav id="main-menu" className="ui dropdown icon top left pointing button">
+      <nav id="main-menu" className="ui dropdown icon top left pointing button pink">
         <i className="bars icon"/>
         <div className="menu">
           <Link to="/" className="item" activeClassName="active">
