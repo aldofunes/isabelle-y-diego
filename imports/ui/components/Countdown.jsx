@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import moment from 'moment-timezone';
 
 import Stat from './Stat.jsx';
 
@@ -7,13 +8,13 @@ export default class Countdown extends Component {
     super(props);
 
     this.state = {
-      dateReached: new Date() > new Date(this.props.givenDate),
+      dateReached: moment.tz(this.props.timeZone) >= moment.tz(this.props.givenDate, this.props.timeZone),
     };
   }
 
   update() {
     this.setState({
-      dateReached: new Date() > new Date(this.props.givenDate),
+      dateReached: moment.tz(this.props.timeZone) >= moment.tz(this.props.givenDate, this.props.timeZone),
     });
   }
 
@@ -26,7 +27,7 @@ export default class Countdown extends Component {
   render() {
     const stats = {};
     if (!this.state.dateReached) {
-      const diff = new Date(this.props.givenDate) - new Date();
+      const diff = moment.tz(this.props.givenDate, this.props.timeZone) - moment.tz(this.props.timeZone);
 
       stats.days = parseInt(diff / (24 * 3600 * 1000), 10);
       stats.hours = parseInt(diff / (3600 * 1000) - (stats.days * 24), 10);
@@ -41,11 +42,16 @@ export default class Countdown extends Component {
     }
     return (
       <div className="ui four statistics">
-        <Stat label="Días" value={stats.days} />
-        <Stat label="Horas" value={stats.hours} />
-        <Stat label="Minutos" value={stats.mins} />
-        <Stat label="Segundos" value={stats.secs} />
+        <Stat label="Días" value={stats.days.toString()}/>
+        <Stat label="Horas" value={stats.hours.toString()}/>
+        <Stat label="Minutos" value={stats.mins.toString()}/>
+        <Stat label="Segundos" value={stats.secs.toString()}/>
       </div>
     );
   }
 }
+
+Countdown.propTypes = {
+  givenDate: PropTypes.string.isRequired,
+  timeZone: PropTypes.string.isRequired,
+};

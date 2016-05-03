@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 export default class Stat extends Component {
   render() {
@@ -14,3 +14,8 @@ export default class Stat extends Component {
     );
   }
 }
+
+Stat.propTypes = {
+  value: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+};

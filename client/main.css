@@ -59034,12 +59034,22 @@ html.ios body {
 /*******************************
          Site Overrides
 *******************************/
-#banner {
+#main-menu {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+#home section {
+  padding: 3em 0;
+}
+#home #banner {
   height: 75vh;
   position: relative;
   background-color: lightcyan;
+  padding: 0;
 }
-#banner .text-box {
+#home #banner .text-box {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -59053,12 +59063,24 @@ html.ios body {
   outline: white 10px solid;
   outline-offset: 10px;
 }
-#couple .ui.grid {
+#home #couple .ui.grid {
   position: relative;
 }
-#main-menu {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 100;
+#home #countdown {
+  background-color: lightcoral;
+}
+#home #countdown * {
+  color: whitesmoke!important;
+}
+#home #dress-code {
+  background-color: lightseagreen;
+}
+#home #dress-code * {
+  color: whitesmoke!important;
+}
+#home #location {
+  background-color: dodgerblue;
+}
+#home #location * {
+  color: whitesmoke!important;
 }
