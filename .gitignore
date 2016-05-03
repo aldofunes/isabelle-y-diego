@@ -81,3 +81,4 @@ jspm_packages
 .node_repl_history
 
 settings.json
+client/main.css
