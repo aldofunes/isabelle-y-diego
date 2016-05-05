@@ -5,11 +5,12 @@ import Fiancee from './Fiancee.jsx';
 export default class Couple extends Component {
   render() {
     return (
-      <div className="ui two column middle aligned very relaxed stackable grid">
+      <div className="ui two column stackable grid">
         <div className="column">
           <Fiancee
             name="Isabelle Richards"
-            description="Se dedica a la casa, los hijos y demás"
+            description="Cum cursus tolerare, omnes guttuses anhelare bi-color, velox aususes.
+              Hercle, animalis gratis!"
             socialNetworks={[{ name: 'Facebook' }]}
           />
         </div>
@@ -21,7 +22,8 @@ export default class Couple extends Component {
         <div className="column">
           <Fiancee
             name="Diego Zavala"
-            description="Trae el bistec a la casa"
+            description="Cum vigil potus, omnes messores aperto festus, albus buboes.
+              Abactors cantare in amivadum!"
             socialNetworks={[{ name: 'Facebook' }]}
           />
         </div>

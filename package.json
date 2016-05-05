@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "start": "meteor run --settings settings.json",
-    "build:css": "lessc client/main.less client/main.css --autoprefix='last 2 versions'"
+    "build:css": "lessc client/main.less client/main.css --autoprefix='last 2 versions'",
+    "deploy:production": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy www.isabelleydiego.com --settings settings.json",
+    "deploy:staging": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy staging.isabelleydiego.com --settings settings.json"
   },
   "dependencies": {
     "jquery": "^2.2.3",
