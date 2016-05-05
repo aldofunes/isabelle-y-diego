@@ -6,10 +6,10 @@ export default class Hotel extends Component {
       <div className="ui fluid card">
         <div className="content">
           <div className="right floated meta">14h</div>
-          <img className="ui avatar image" src="../images/avatar/large/elliot.jpg"/> Elliot
+          <img className="ui avatar image" src="http://placehold.it/100x100"/> Hotel
         </div>
         <div className="image">
-          <img src=""/>
+          <img src="http://placehold.it/600x400"/>
         </div>
         <div className="content">
           <span className="right floated">

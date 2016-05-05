@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 
+import Forecast from '../components/Forecast.jsx';
+
 export default class Location extends Component {
   render() {
     return (
-      <h2 className="ui icon header">
-        <i className="marker icon"/>
-        <div className="content">
-          {this.props.name}
-          <div className="sub header">{this.props.address}</div>
-        </div>
+      <div id="address">
+        <h2>{this.props.name}</h2>
+        <h4>{this.props.address}</h4>
+
         <div class="ui buttons">
           <a href={this.props.googleMaps} target="_blank" className="ui secondary button">
             Google
@@ -17,7 +17,7 @@ export default class Location extends Component {
             Waze
           </a>
         </div>
-      </h2>
+      </div>
     );
   }
 }

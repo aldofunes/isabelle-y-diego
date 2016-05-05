@@ -8,6 +8,7 @@
     "deploy:staging": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy staging.isabelleydiego.com --settings settings.json"
   },
   "dependencies": {
+    "forecast.io-bluebird": "0.0.1",
     "jquery": "^2.2.3",
     "less": "^2.6.1",
     "less-plugin-autoprefix": "^1.5.1",
@@ -15,8 +16,10 @@
     "moment": "^2.13.0",
     "moment-timezone": "^0.5.3",
     "react": "^15.0.2",
+    "react-addons-pure-render-mixin": "^15.0.2",
     "react-dom": "^15.0.2",
-    "react-router": "^2.4.0"
+    "react-router": "^2.4.0",
+    "skycons": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import $ from 'jquery';
 
-export default class Header extends Component {
+export default class Menu extends Component {
   componentDidMount() {
     $('.ui.dropdown').dropdown();
   }
@@ -10,13 +10,13 @@ export default class Header extends Component {
   render() {
     return (
       <nav id="main-menu" className="ui dropdown icon top left pointing button pink">
-        <i className="bars icon"/>
+        <i className="bars icon"/> Menu
         <div className="menu">
           <Link to="/" className="item" activeClassName="active">
-            <i className="home icon"/> Home
+            <i className="home icon"/> Inicio
           </Link>
           <Link to="/hotels" className="item" activeClassName="active">
-            <i className="building icon"/> Hotels
+            <i className="building icon"/> Hoteles
           </Link>
           <Link to="/rsvp" className="item" activeClassName="active">
             <i className="checkmark box icon"/> RSVP

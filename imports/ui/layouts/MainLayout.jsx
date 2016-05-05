@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Header from '../components/Header.jsx';
+import Menu from '../components/Menu.jsx';
 
 export default class MainLayout extends React.Component {
   render() {
     return (
       <div id="main-layout">
 
-        <Header />
-        
+        <Menu />
+
         {this.props.children}
       </div>
     );

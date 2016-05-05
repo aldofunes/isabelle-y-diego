@@ -18,3 +18,9 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 # UI
 semantic:ui
 templating
+
+# Data
+http
+mdg:validated-method
+aldeed:simple-schema
+react-meteor-data

@@ -4,6 +4,7 @@ import Banner from '../components/Banner.jsx';
 import Countdown from '../components/Countdown.jsx';
 import Couple from '../components/Couple.jsx';
 import Events from '../components/Events.jsx';
+import Forecast from '../components/Forecast.jsx';
 import Hotel from '../components/Hotel.jsx';
 import Location from '../components/Location.jsx';
 import Stat from '../components/Stat.jsx';
@@ -47,6 +48,8 @@ export default class Home extends Component {
 
         <section id="location">
           <div className="ui container center aligned">
+            <Forecast />
+
             <Location
               name="Manoir de la garde"
               address="170 impasse de la Garde, 69640 Jarnioux, France"
