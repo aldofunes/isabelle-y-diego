@@ -19,8 +19,8 @@ class Forecast extends Component {
   componentWillMount() {
     Meteor.call('forecast.get', {
       apiKey: '208497dc5051c19ac819ae169647a60c',
-      latitude: '37.8267',
-      longitude: '-122.423',
+      latitude: '45.967499',
+      longitude: '4.624591',
     }, (error, res) => {
       ForecastCollection.insert(JSON.parse(res.content));
     });
