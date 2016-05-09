@@ -29,7 +29,6 @@ class Forecast extends Component {
   renderForecast() {
     const data = this.props.data;
 
-    console.log(data.currently);
     return (
       <div id="forecast">
         <Skycon

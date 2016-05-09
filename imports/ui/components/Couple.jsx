@@ -15,9 +15,7 @@ export default class Couple extends Component {
           />
         </div>
         <div className="ui vertical divider">
-          &nbsp;
-          <i className="heart icon"/>
-          &nbsp;
+          <img className="ui fluid image" src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/couple.svg" alt=""/>
         </div>
         <div className="column">
           <Fiancee

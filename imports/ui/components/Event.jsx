@@ -1,26 +1,29 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
 
 export default class Event extends Component {
   render() {
     return (
       <div className="ui fluid card">
-        <div className="image">
-          <img src={this.props.image}/>
+        {/* This will generate two images and swap them on hover */}
+        <div className="ui slide masked reveal image">
+          <img src={this.props.image1} className="visible content"/>
+          <img src={this.props.image2} className="hidden content"/>
         </div>
         <div className="content">
-          <a className="header">{this.props.name}</a>
-          <div className="meta">
-            <span className="date">{this.props.date} {this.props.time}</span>
-          </div>
-          <div className="description">
-            {this.props.description}
-          </div>
+          <span className="right floated">{this.props.time}</span>
+          <span className="header">{this.props.name}</span>
+          <p className="description">{this.props.description}</p>
+        </div>
+        <div className="content">
+          <p>{this.props.venue}</p>
+          <p>{this.props.address}</p>
         </div>
         <div className="extra content">
-          <a>
-            <i className="page icon"/>
-            {this.props.notes}
+          <a href={this.props.google} className="ui inverted red small icon button">
+            <i className="google icon"/> Maps
+          </a>
+          <a href={this.props.waze} className="ui inverted blue small icon button right floated">
+            <i className="car icon"/> Waze
           </a>
         </div>
       </div>
@@ -29,10 +32,14 @@ export default class Event extends Component {
 }
 
 Event.propTypes = {
-  name: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  notes: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  google: PropTypes.string.isRequired,
+  image1: PropTypes.string.isRequired,
+  image2: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  venue: PropTypes.string.isRequired,
+  waze: PropTypes.string.isRequired,
 };

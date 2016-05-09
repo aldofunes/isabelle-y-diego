@@ -6,8 +6,8 @@ import Couple from '../components/Couple.jsx';
 import Events from '../components/Events.jsx';
 import Forecast from '../components/Forecast.jsx';
 import Hotel from '../components/Hotel.jsx';
-import Location from '../components/Location.jsx';
 import Stat from '../components/Stat.jsx';
+import RSVP from '../components/RSVP.jsx';
 
 export default class Home extends Component {
   render() {
@@ -49,19 +49,18 @@ export default class Home extends Component {
         <section id="location">
           <div className="ui container center aligned">
             <Forecast />
+          </div>
+        </section>
 
-            <Location
-              name="Manoir de la garde"
-              address="170 impasse de la Garde, 69640 Jarnioux, France"
-              googleMaps="https://www.google.com/maps/dir/Current+Location/Manoir+de+la+Garde,+170+impasse+de+la+Garde,+69640+Jarnioux,+France/"
-              waze="https://waze.to/lr/hu05m90pkp"
-            />
+        <section id="rsvp">
+          <div className="ui container">
+            <RSVP />
           </div>
         </section>
 
         <section id="hotels">
           <div className="ui container">
-            <div className="ui three column grid">
+            <div className="ui three column stackable grid">
               <div className="column">
                 <Hotel />
               </div>
@@ -72,6 +71,18 @@ export default class Home extends Component {
                 <Hotel />
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="gifts">
+          <div className="ui container">
+            <h2>Regalos</h2>
+            <p>
+              Afortunadamente la vida nos ha bendecido y no necesitamos nada; su presencia el día
+              de la boda es el mejor regalo que podamos recibir, y valoramos mucho el esfuerzo en
+              tiempo y recursos que nos brindan al acompañarnos en ese Día tan especial, se lo
+              decimos de todo corazón.
+            </p>
           </div>
         </section>
       </div>

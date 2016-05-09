@@ -22,5 +22,8 @@ templating
 # Data
 http
 mdg:validated-method
-aldeed:simple-schema
 react-meteor-data
+aldeed:collection2
+
+# Development
+msavin:mongol
