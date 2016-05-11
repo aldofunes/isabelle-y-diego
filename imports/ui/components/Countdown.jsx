@@ -41,12 +41,16 @@ export default class Countdown extends Component {
       stats.secs = 0;
     }
     return (
-      <div className="ui four statistics">
-        <Stat label="Días" value={stats.days.toString()}/>
-        <Stat label="Horas" value={stats.hours.toString()}/>
-        <Stat label="Minutos" value={stats.mins.toString()}/>
-        <Stat label="Segundos" value={stats.secs.toString()}/>
-      </div>
+      <section id="countdown">
+        <div className="ui container">
+          <div className="ui four statistics">
+            <Stat label="Días" value={stats.days.toString()}/>
+            <Stat label="Horas" value={stats.hours.toString()}/>
+            <Stat label="Minutos" value={stats.mins.toString()}/>
+            <Stat label="Segundos" value={stats.secs.toString()}/>
+          </div>
+        </div>
+      </section>
     );
   }
 }

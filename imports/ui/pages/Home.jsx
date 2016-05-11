@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
 import Banner from '../components/Banner.jsx';
+import Children from '../components/Children.jsx';
 import Countdown from '../components/Countdown.jsx';
 import Couple from '../components/Couple.jsx';
+import DressCode from '../components/DressCode';
 import Events from '../components/Events.jsx';
 import Forecast from '../components/Forecast.jsx';
-import Hotel from '../components/Hotel.jsx';
-import Stat from '../components/Stat.jsx';
+import Gifts from '../components/Gifts.jsx';
+import Hotels from '../components/Hotels.jsx';
 import RSVP from '../components/RSVP.jsx';
 
 export default class Home extends Component {
@@ -16,75 +18,25 @@ export default class Home extends Component {
 
         <Banner />
 
-        <section id="countdown">
-          <div className="ui container">
-            <Countdown
-              givenDate="2016-08-13 15:30:00"
-              timeZone="Europe/Paris"
-            />
-          </div>
-        </section>
+        <Countdown
+          givenDate="2016-08-13 15:30:00"
+          timeZone="Europe/Paris"
+        />
 
-        <section id="couple">
-          <div className="ui container center aligned">
-            <Couple />
-          </div>
-        </section>
+        <Couple />
 
-        <section id="dress-code">
-          <div className="ui container">
-            <div className="ui two statistics">
-              <Stat label="Hombres" value="Formal"/>
-              <Stat label="Mujeres" value="Cocktail"/>
-            </div>
-          </div>
-        </section>
+        <DressCode />
 
-        <section id="events">
-          <div className="ui container">
-            <Events />
-          </div>
-        </section>
+        <Events />
 
-        <section id="location">
-          <div className="ui container center aligned">
-            <Forecast />
-          </div>
-        </section>
+        <Forecast />
 
-        <section id="rsvp">
-          <div className="ui container">
-            <RSVP />
-          </div>
-        </section>
+        <RSVP />
 
-        <section id="hotels">
-          <div className="ui container">
-            <div className="ui three column stackable grid">
-              <div className="column">
-                <Hotel />
-              </div>
-              <div className="column">
-                <Hotel />
-              </div>
-              <div className="column">
-                <Hotel />
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hotels />
 
-        <section id="gifts">
-          <div className="ui container">
-            <h2>Regalos</h2>
-            <p>
-              Afortunadamente la vida nos ha bendecido y no necesitamos nada; su presencia el día
-              de la boda es el mejor regalo que podamos recibir, y valoramos mucho el esfuerzo en
-              tiempo y recursos que nos brindan al acompañarnos en ese Día tan especial, se lo
-              decimos de todo corazón.
-            </p>
-          </div>
-        </section>
+        <Gifts />
+
       </div>
     );
   }

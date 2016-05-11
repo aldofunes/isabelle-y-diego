@@ -26,19 +26,36 @@ class Forecast extends Component {
     });
   }
 
+  toggleForecast() {
+    this.setState({
+      expanded: !this.state.expanded,
+    });
+  }
+
   renderForecast() {
     const data = this.props.data;
 
     return (
-      <div id="forecast">
-        <Skycon
-          id={data._id}
-          color="white"
-          icon={data.currently.icon}
-          size={64}
-          summary={data.currently.summary}
-        />
-      </div>
+      <section id="location">
+        <div className="ui container center aligned">
+          <div id="forecast">
+            <Skycon
+              id={data._id}
+              color="white"
+              icon={data.currently.icon}
+              size={64}
+              summary={data.currently.summary}
+            />
+            <h3 className="header">
+              {Math.round(data.currently.temperature)}ºC - {data.currently.summary}
+            </h3>
+
+            <button className="ui inverted white button" onClick={this.toggleForecast.bind(this)}>
+              Ver más
+            </button>
+          </div>
+        </div>
+      </section>
     );
   }
 
@@ -48,9 +65,17 @@ class Forecast extends Component {
       forecastData = this.renderForecast();
     }
 
+    let expansion = '';
+    if (this.state.expanded) {
+      expansion = (
+        <p>Expanded content</p>
+      );
+    }
+
     return (
       <div id="forecast">
         {forecastData}
+        {expansion}
       </div>
     );
   }
