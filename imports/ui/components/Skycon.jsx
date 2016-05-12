@@ -7,7 +7,6 @@ export default class Skycon extends Component {
     const skycons = new Skycons({ color: this.props.color });
     skycons.add(this.props.id, this.props.icon);
     skycons.play();
-    $(`#${this.props.id}`).popup();
   }
 
   render() {
@@ -16,8 +15,6 @@ export default class Skycon extends Component {
         id={this.props.id}
         width={this.props.size}
         height={this.props.size}
-        data-content={this.props.summary}
-        data-variation="basic inverted"
       />
     );
   }

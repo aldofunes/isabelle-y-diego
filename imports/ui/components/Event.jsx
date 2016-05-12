@@ -15,7 +15,7 @@ export default class Event extends Component {
           <p className="description">{this.props.description}</p>
         </div>
         <div className="content">
-          <p>{this.props.venue}</p>
+          <h4 className="ui header">{this.props.venue}</h4>
           <p>{this.props.address}</p>
         </div>
         <div className="extra content">

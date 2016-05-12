@@ -1,0 +1,27 @@
+#forecast {
+  background-color: dodgerblue;
+  #content {
+    color: #FAFAFA;
+    canvas {
+      margin-left: -0.6rem
+    }
+    .temp-bar {
+      position: relative;
+      width: 1rem;
+      margin: 1rem auto 4rem;
+      border-radius: 1rem;
+      background-color: #FAFAFA;
+      span {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        &.temp-min {
+          top: -1.3rem;
+        }
+        &.temp-max {
+          bottom: -1.3rem;
+        }
+      }
+    }
+  }
+}

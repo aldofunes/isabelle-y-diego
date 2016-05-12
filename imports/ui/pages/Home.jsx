@@ -31,8 +31,6 @@ export default class Home extends Component {
 
         <Forecast />
 
-        <RSVP />
-
         <Hotels />
 
         <Gifts />
