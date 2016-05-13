@@ -9,7 +9,7 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <nav id="main-menu" className="ui dropdown icon top left pointing button pink">
+      <nav id="main-menu" className="ui dropdown icon top left pointing button brown">
         <i className="bars icon"/> Menu
         <div className="menu">
           <Link

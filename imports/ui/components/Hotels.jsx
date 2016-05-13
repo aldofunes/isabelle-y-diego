@@ -64,17 +64,7 @@ export default class Hotels extends React.Component {
   renderHotels() {
     return this.hotels().map((hotel) => (
       <div key={hotel._id} className="column">
-        <Hotel
-          name={hotel.name}
-          stars={hotel.stars}
-          location={hotel.location}
-          image={hotel.image}
-          url={hotel.url}
-          phone={hotel.phone}
-          description={hotel.description}
-          amenities={hotel.amenities}
-          price={hotel.price}
-        />
+        <Hotel {...hotel}/>
       </div>
     ));
   }
@@ -83,7 +73,7 @@ export default class Hotels extends React.Component {
     return (
       <section id="hotels">
         <div className="ui container">
-          <div className="ui three column stackable grid">
+          <div className="ui middle aligned three column stackable grid">
             {this.renderHotels()}
           </div>
         </div>

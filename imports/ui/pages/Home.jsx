@@ -6,6 +6,7 @@ import Couple from '../components/Couple.jsx';
 import DressCode from '../components/DressCode';
 import Events from '../components/Events.jsx';
 import Forecast from '../components/Forecast.jsx';
+import Gallery from '../components/Gallery.jsx';
 import Gifts from '../components/Gifts.jsx';
 import Hotels from '../components/Hotels.jsx';
 import Recommendations from '../components/Recommendations.jsx';
@@ -34,6 +35,10 @@ export default class Home extends Component {
         <Hotels />
 
         <Gifts />
+
+        <Gallery />
+
+        <Recommendations />
 
       </div>
     );

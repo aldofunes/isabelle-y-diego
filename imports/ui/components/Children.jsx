@@ -23,7 +23,7 @@ export default class Children extends React.Component {
 
   render() {
     return (
-      <div className="ui four column grid">
+      <div className="ui middle aligned four column doubling grid">
         {this.renderChildren()}
       </div>
     );

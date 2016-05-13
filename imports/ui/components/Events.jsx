@@ -8,8 +8,8 @@ export default class Events extends Component {
       {
         _id: 1,
         name: 'Ceremonia religiosa',
-        image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/church.jpg',
-        image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/church.jpg',
+        image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/church1.jpg',
+        image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/church2.jpg',
         date: '13 de agosto, 2016',
         time: '3:30 PM',
         description: 'Celebra con nosotros nuestra boda',
@@ -21,8 +21,8 @@ export default class Events extends Component {
       {
         _id: 2,
         name: 'Cocktail',
-        image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/cocktail.jpg',
-        image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/cocktail.jpg',
+        image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/cocktail1.jpg',
+        image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/cocktail2.jpg',
         date: '13 de agosto, 2016',
         time: '5:30 PM',
         description: 'Un pequeño trago antes de la fiesta',
@@ -34,8 +34,8 @@ export default class Events extends Component {
       {
         _id: 3,
         name: 'Recepción',
-        image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/reception.jpg',
-        image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/reception.jpg',
+        image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/reception1.jpg',
+        image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/reception2.jpg',
         date: '13 de agosto, 2016',
         time: '7:30 PM',
         description: 'Bailemos todos juntos',
