@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import Hotel from './Hotel.jsx';
 
@@ -76,6 +77,8 @@ export default class Hotels extends React.Component {
           <div className="ui middle aligned three column stackable grid">
             {this.renderHotels()}
           </div>
+          <br/>
+          <Link to="recommendations" className="ui inverted brown fluid button">Ver más</Link>
         </div>
       </section>
     );

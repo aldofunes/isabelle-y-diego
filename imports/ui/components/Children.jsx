@@ -14,7 +14,6 @@ export default class Children extends React.Component {
     return this.children().map((child) => (
       <div key={child._id} className="column">
         <img className="ui centered small circular image" src={child.picture}/>
-
         <h4 className="header">{child.name}</h4>
         <p className="description">{child.bio}</p>
       </div>

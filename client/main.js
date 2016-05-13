@@ -5,6 +5,12 @@ import { renderRoutes } from '../imports/startup/client/routes.jsx';
 import '../imports/api/guestWishes/model.js';
 import '../imports/api/guestWishes/methods.js';
 
+import '../imports/api/guests/model.js';
+import '../imports/api/guests/methods.js';
+
+import '../imports/api/confirmations/model.js';
+import '../imports/api/confirmations/methods.js';
+
 import 'jquery';
 
 Meteor.startup(() => {

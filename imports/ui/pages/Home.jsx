@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Banner from '../components/Banner.jsx';
 import Countdown from '../components/Countdown.jsx';
@@ -9,14 +9,16 @@ import Forecast from '../components/Forecast.jsx';
 import Gallery from '../components/Gallery.jsx';
 import Gifts from '../components/Gifts.jsx';
 import Hotels from '../components/Hotels.jsx';
-import Recommendations from '../components/Recommendations.jsx';
+import Menu from '../components/Menu.jsx';
 import RSVP from '../components/RSVP.jsx';
 
-export default class Home extends Component {
+export default class Home extends React.Component {
   render() {
     return (
       <div id="home">
 
+        <Menu />
+        
         <Banner />
 
         <Countdown
@@ -30,15 +32,15 @@ export default class Home extends Component {
 
         <Events />
 
+        <Gifts />
+
+        <RSVP />
+
         <Forecast />
 
         <Hotels />
 
-        <Gifts />
-
         <Gallery />
-
-        <Recommendations />
 
       </div>
     );
