@@ -18,7 +18,7 @@ export default class Home extends React.Component {
       <div id="home">
 
         <Menu />
-        
+
         <Banner />
 
         <Countdown

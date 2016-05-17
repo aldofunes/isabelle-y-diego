@@ -11,6 +11,8 @@ import '../imports/api/guests/methods.js';
 import '../imports/api/confirmations/model.js';
 import '../imports/api/confirmations/methods.js';
 
+import '../imports/startup/register-schema';
+
 import 'jquery';
 
 Meteor.startup(() => {

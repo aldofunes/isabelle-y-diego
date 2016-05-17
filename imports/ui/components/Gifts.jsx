@@ -22,10 +22,10 @@ export default class Gifts extends React.Component {
           </button>
         </div>
 
-        <div className="ui small modal" id="gift">
+        <div className="ui small basic modal" id="gift">
           <i className="close icon"/>
           <div className="header">
-            Insistir
+            ¿En verdad quieres regalarnos algo?
           </div>
           <div className="image content">
             <div className="ui fluid image">
@@ -33,7 +33,6 @@ export default class Gifts extends React.Component {
                 src="http://www.southernseason.com/wp-content/uploads/2013/07/wine_pouring2.jpg"/>
             </div>
             <div className="description">
-              <div className="ui header">¿En verdad quieres regalarnos algo?</div>
               <p>
                 Lo repetimos, el que sean participe del evento es un presente invaluable para
                 nosotros; sin embargo, a las personas que insistirían en llevar algo, podríamos

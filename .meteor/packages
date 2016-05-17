@@ -24,6 +24,9 @@ http
 mdg:validated-method
 react-meteor-data
 aldeed:collection2
+dburles:collection-helpers
+
 
 # Development
 msavin:mongol
+check

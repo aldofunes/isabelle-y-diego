@@ -128,7 +128,7 @@ export default class RSVP extends React.Component {
 
             <form className="ui form" ref="RSVPForm" onSubmit={this.handleSubmit.bind(this)}>
 
-              <h2>Confirma tu asistencia</h2>
+              <h2>Confirma tu asistencia <small><em>o tu ausencia</em></small></h2>
 
               <div className="field">
                 <input ref="email" type="email" placeholder="Correo electrónico"/>

@@ -24,7 +24,7 @@ export default class Menu extends Component {
 
   renderItems() {
     return this.items().map((item) => (
-      <Link to={item.hash} className="item" activeClass="active" spy={true} smooth={true}>
+      <Link key={item._id} to={item.hash} className="item" activeClass="active" spy={true} smooth={true}>
         <i className={`${item.icon} icon`}/> {item.title}
       </Link>
     ));

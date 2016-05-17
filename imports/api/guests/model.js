@@ -1,6 +1,8 @@
 import { Mongo } from 'meteor/mongo';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
+import { Confirmations } from '../confirmations/model.js';
+
 export const Guests = new Mongo.Collection('guests');
 
 Guests.schema = new SimpleSchema({
@@ -23,3 +25,9 @@ Guests.schema = new SimpleSchema({
 });
 
 Guests.attachSchema(Guests.schema);
+
+Guests.helpers({
+  email() {
+    return Confirmations.findOne(this.confirmationId).email;
+  },
+});
