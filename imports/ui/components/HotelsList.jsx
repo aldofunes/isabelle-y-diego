@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router';
 
-import Hotel from './Hotel.jsx';
+import HotelsListItem from './HotelsListItem.jsx';
 
-export default class Hotels extends React.Component {
+export default class HotelsList extends React.Component {
   hotels() {
     return [
       {
@@ -62,23 +61,21 @@ export default class Hotels extends React.Component {
     ];
   }
 
-  renderHotels() {
+  renderHotelsListItems() {
     return this.hotels().map((hotel) => (
-      <div key={hotel._id} className="column">
-        <Hotel {...hotel}/>
-      </div>
+      <HotelsListItem key={hotel._id} {...hotel}/>
     ));
   }
 
+
   render() {
     return (
-      <section id="hotels">
+      <section id="hotels-list">
         <div className="ui container">
-          <div className="ui middle aligned three column stackable grid">
-            {this.renderHotels()}
+          <h2 className="ui header">Hoteles recomendados</h2>
+          <div className="ui relaxed list">
+            {this.renderHotelsListItems()}
           </div>
-          <br/>
-          <Link to="recommendations" className="ui inverted brown fluid button">Ver más</Link>
         </div>
       </section>
     );

@@ -1,13 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import HotelsList from '../components/HotelsList.jsx';
 import Tours from '../components/Tours.jsx';
+import CitiesList from '../components/CitiesList/CitiesList.jsx';
 
 export default class Recommendations extends React.Component {
   render() {
     return (
       <div id="recommendations">
-        <Link id="main-menu" to="/" className="item" className="ui dropdown icon top left pointing secondary button">
+        <Link
+          id="main-menu"
+          to="/"
+          className="ui dropdown icon pointing secondary button"
+        >
           <i className="home icon"/> Inicio
         </Link>
 
@@ -19,11 +25,11 @@ export default class Recommendations extends React.Component {
           </div>
         </section>
 
-        <section id="Lyon">
-
-        </section>
+        <CitiesList />
 
         <Tours />
+
+        <HotelsList />
 
       </div>
     );

@@ -27,7 +27,7 @@ export default class Tours extends React.Component {
       },
       {
         _id: '3',
-        name: 'Turibus en Lyon',
+        name: 'Autobús Turístico en Lyon',
         isFeatured: false,
         price: '€20.00',
         duration: '1 día',
@@ -50,7 +50,8 @@ export default class Tours extends React.Component {
     return (
       <section id="tours">
         <div className="ui container">
-          <div className="ui middle aligned three column stackable grid">
+          <h2 className="ui header">Tours</h2>
+          <div className="ui middle aligned three column relaxed stackable grid">
             {this.renderTours()}
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 import $ from 'jquery';
 
-export default class Hotel extends React.Component {
+export default class HotelCard extends React.Component {
   componentDidMount() {
     $('.ui.rating').rating({
       maxRating: 5,
@@ -66,7 +66,7 @@ export default class Hotel extends React.Component {
                 {this.props.phone}
               </div>
             </div>
-            
+
           </div>
         </div>
 
@@ -84,7 +84,7 @@ export default class Hotel extends React.Component {
   }
 }
 
-Hotel.propTypes = {
+HotelCard.propTypes = {
   name: PropTypes.string.isRequired,
   stars: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
