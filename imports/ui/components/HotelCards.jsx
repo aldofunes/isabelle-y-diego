@@ -14,14 +14,8 @@ export default class HotelCards extends React.Component {
         image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/western.jpg',
         url: 'http://www.booking.com/hotel/fr/bestwesternplaisance.en-gb.html',
         phone: '+33 4 74 65 33 52',
+        email: 'info@hotel-plaisance.com',
         description: 'Straightforward hotel offering bright rooms with free Wi-Fi, plus a cocktail bar & meeting space.',
-        amenities: [
-          { icon: 'wifi', description: 'Free Wifi' },
-          { icon: 'paw', description: 'Pets allowed' },
-          { icon: 'food', description: 'Restaurant' },
-          { icon: 'bar', description: 'Bar' },
-          { icon: 'remove circle', description: 'Smoke Free' },
-        ],
         price: 1617,
       },
       {
@@ -32,14 +26,8 @@ export default class HotelCards extends React.Component {
         image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/mercure.jpg',
         url: 'http://www.booking.com/hotel/fr/ici-amp-la.en-gb.html',
         phone: '+33 4 37 55 09 09',
+        email: 'reception@hotelicietla.com',
         description: 'Contemporary rooms with free WiFi & local artwork, plus a rooftop pool & an upscale brasserie.',
-        amenities: [
-          { icon: 'wifi', description: 'Free Wifi' },
-          { icon: 'ticket', description: 'Paid parking' },
-          { icon: 'handicap', description: 'Accessible' },
-          { icon: 'sun', description: 'Outdoor pool' },
-          { icon: 'fire', description: 'Air conditioned' },
-        ],
         price: 1719,
       },
       {
@@ -50,13 +38,8 @@ export default class HotelCards extends React.Component {
         image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/chateau.jpg',
         url: 'http://www.booking.com/hotel/fr/chateaudebagnols.en-gb.html',
         phone: '+33 4 74 71 40 00',
+        email: 'info@chateaudebagnols.fr',
         description: 'Elegant quarters in a 15th-century castle with a restaurant, outdoor pool & massage treatments.',
-        amenities: [
-          { icon: 'car', description: 'Free parking' },
-          { icon: 'paw', description: 'Pets allowed' },
-          { icon: 'food', description: 'Restaurant' },
-          { icon: 'trophy', description: 'Gym' },
-        ],
         price: 7349,
       },
     ];

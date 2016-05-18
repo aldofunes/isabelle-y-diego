@@ -13,17 +13,6 @@ export default class HotelCard extends React.Component {
     });
   }
 
-  renderAmenities() {
-    return this.props.amenities.map((amenity) => (
-      <div key={amenity.icon} className="item">
-        {React.createElement('i', { className: `${amenity.icon} icon` })}
-        <div className="content">
-          {amenity.description}
-        </div>
-      </div>
-    ));
-  }
-
   render() {
     return (
       <div className="ui fluid card hotel">
@@ -48,10 +37,7 @@ export default class HotelCard extends React.Component {
         </div>
 
         <div className="content">
-          <div className="ui list left floated">
-            {this.renderAmenities()}
-          </div>
-          <div className="ui list right floated">
+          <div className="ui list">
 
             <div className="item">
               <i className="dollar icon"/>
@@ -64,6 +50,13 @@ export default class HotelCard extends React.Component {
               <i className="phone icon"/>
               <div className="content">
                 {this.props.phone}
+              </div>
+            </div>
+
+            <div className="item">
+              <i className="envelope icon"/>
+              <div className="content">
+                {this.props.email}
               </div>
             </div>
 
@@ -92,6 +85,6 @@ HotelCard.propTypes = {
   image: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   phone: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  amenities: PropTypes.array.isRequired,
 };
