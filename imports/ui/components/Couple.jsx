@@ -33,7 +33,7 @@ export default class Couple extends Component {
             </div>
             <div className="ui vertical divider">
               <img className="ui fluid image"
-                   src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/couple.svg" alt=""/>
+                   src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/icons/couple.svg" alt=""/>
             </div>
             <div className="column">
               <Fiancee {...this.fiancees()[1]}/>
@@ -42,7 +42,7 @@ export default class Couple extends Component {
         </div>
 
         <Parallax
-          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/isabelle-diego1.jpg"
+          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego.jpg"
           blur={5}
           strength={200}
           className="ui center aligned"

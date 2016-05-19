@@ -5,49 +5,59 @@ export default class Gallery extends React.Component {
   images() {
     return [
       {
-        _id: '4',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/anne-helen.jpg',
+        _id: '1',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/anne-helen.jpg',
         description: 'Anne Hélène de compras en Chiapas',
       },
       {
-        _id: '1',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/claire-pascal-richard1.jpg',
-        description: 'Claire Pascal Richard y su familia',
-      },
-      {
         _id: '2',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/claire-pascal-richard2.jpg',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/claire-pascal-richard.jpg',
         description: 'Claire Pascal Richard y su familia',
       },
       {
         _id: '3',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/claire-pascal-richard3.jpg',
-        description: 'Claire Pascal Richard y su familia',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/mercedes-zavala.jpg',
+        description: 'Mercedes Zavala y su familia',
+      },
+      {
+        _id: '4',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/padres-diego.jpg',
+        description: 'Con los papás de Diego',
       },
       {
         _id: '5',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/juan-ignacio-zavala.jpg',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/juan-ignacio-zavala.jpg',
         description: 'juan Ignacio Zavala y su familia',
       },
       {
         _id: '6',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/rafael-zavala.jpg',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/rafael-zavala.jpg',
         description: 'Rafael Zavala y su familia',
       },
       {
         _id: '7',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/recuerdo.jpg',
-        description: 'Una foto de los recuerdos',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/louis-richard.jpg',
+        description: 'Louis Richard',
       },
       {
         _id: '8',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/anne-helen2.jpg',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/anne-helen2.jpg',
         description: 'Anne Hélène en Chiapas',
       },
       {
         _id: '9',
-        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/maman-messe-aout.jpg',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/maman-messe-aout.jpg',
         description: 'Maman Messe Aout',
+      },
+      {
+        _id: '10',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/pierrete.jpg',
+        description: 'Pierrete Richards con su familia',
+      },
+      {
+        _id: '11',
+        url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/star-wars.jpg',
+        description: 'A punto de ver Star Wars',
       },
     ];
   }
@@ -66,10 +76,10 @@ export default class Gallery extends React.Component {
         >
           <img src={image.url}/>
         </a>
-        <div className="ui basic small centered modal" id={image._id}>
+        <div className="ui basic small modal" id={image._id}>
           <i className="close icon"/>
-          <img className="ui fluid rounded image" src={image.url}/>
-          <h4>{image.description}</h4>
+          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }} src={image.url}/>
+          <h4 style={{ textAlign: 'center' }}>{image.description}</h4>
         </div>
       </div>
     ));

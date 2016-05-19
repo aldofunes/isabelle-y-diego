@@ -17,19 +17,19 @@ export default class Children extends React.Component {
         _id: '2',
         name: 'Isabelle',
         bio: 'Primera de la serie. ¡10 años ya! \n\n Líder entre sus primos y amigos, es carismática. Tiene mucha creatividad e iniciativa: es muy detallista (las notitas que encontramos en la casa los días con festejos ella las pone), se pasa horas ideando regalitos, tejiendo o haciendo pulseras con ligas para ofrecerlos; … cuando no manda mensajes a sus amigas o no toca guitarra. Le gusta también bailar, cantar, patinar sobre hielo, andar en bici con los pies en el manubrio. \n\n Pone disciplina y dedicación en todo lo que hace: escuela, actividades extra escolares y vida social por supuesto. \n\n Si las comidas podrían limitarse a dulces y pasta, su existencia sería un paraíso. \n\n Lo que no puede faltar en su cuarto: algún dispositivo para oír sus canciones favoritas, … y una cantidad indescriptible de materiales, ropa, muñecas, papeles, utensilios, etc. que ella encuentra indispensables a su vida diaria, y que los demás calificamos de … ¡desorden!',
-        picture: 'http://placehold.it/300',
+        picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/isabelle-hija.jpg',
       },
       {
         _id: '3',
         name: 'Anne Hélène',
         bio: '¡8 años que la queremos! \n\n La más auténtica, discreta y cariñosa, sin hacer ruido anda caminando forjando su vida con mucha fortaleza, determinación y lindura. \n\n Muy cuidadosa en su vestimenta, se esmera en vestirse bonita, como a ella le gusta. \n\n Pocos amigos, pero amigos contra todo y para siempre podría ser su lema. Buena estudiante, toca violín y le encanta bailar jazz con sus hermanas. \n\n Le fascinan… la cajeta (bajo cualquier forma: sola, en helado, en crepas, etc.), leer, las actividades manuales, los legos, invitar a sus amigas, estar con su familia y pasar tiempo con sus padrinos. \n\n Lo que no puede faltar en su cuarto: libros, la cajita de “atrapa sueños” (para alejar las pesadillas de sus noches), unos paquetes de post it, … y algún teléfono que habrá tomado “prestado” (para hacer sus juegos electrónicos favoritos).',
-        picture: 'http://placehold.it/300',
+        picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/anne-helene.jpg',
       },
       {
         _id: '4',
         name: 'Catalina',
         bio: '¡El modelo 2010! \n\n La última, la niña más entusiasta, expresiva y sensible de la familia sin duda. La más fuerte de carácter también… ¡sin duda! \n\n Con sus 6 años de edad no se queda atrás y pone especial énfasis en buscar alcanzar a sus hermanas en lo que hagan. Si pudiera tener un vestido nuevo para cada evento social de su agenda sería la mujer más feliz! \n\n Muy ocurrente en sus comentarios o respuestas frente a las situaciones que se presentan, nos saca más de una risa o sonrisa. \n\n Disfruta mucho bailar, cantar, hablar inglés, ir a la escuela, llamar por teléfono, y ver a sus amigos (se lleva el premio de la persona más social de la familia: ¡todos son sus amigos!) \n\n Lo que no puede faltar en su cuarto: sus “doudous” (peluchitos para dormir), disfraces, maquillaje, papel-tijeras-pulmones para dibujar, … y los regalos que le dan sus seres consentidos.',
-        picture: 'http://placehold.it/300',
+        picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/catalina.jpg',
       },
     ];
   }

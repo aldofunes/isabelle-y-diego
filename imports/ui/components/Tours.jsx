@@ -12,7 +12,7 @@ export default class Tours extends React.Component {
         price: '1 día: €24.00',
         duration: '1 a 3 días',
         description: 'Disfruta ilimitado acceso a transporte público, descuentos a museos, tours, teatros, renta de bicicletas, cruceros en el río y más! ',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tour1.jpg',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour1.jpg',
         url: 'https://www.lyoncitycard.com/?lang=2',
       },
       {
@@ -22,7 +22,7 @@ export default class Tours extends React.Component {
         price: '€77.00',
         duration: '4 h. 30 min',
         description: 'Descubre todas las maravillas de los viñedos del Beaujolai. Visita sus increíbles capillas y aldeas, entre otros. Incluye cata de vino. ',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tour2.jpg',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour2.jpg',
         url: 'http://www.en.lyon-france.com/Things-to-do/Culture-Activities/Visit-Lyon-differently/Beaujolais-Le-Grand-Tour',
       },
       {
@@ -32,7 +32,7 @@ export default class Tours extends React.Component {
         price: '€20.00',
         duration: '1 día',
         description: 'Descubre la ciudad de Lyon y disfruta sus únicas y fantásticas vistas desde el segundo piso de un autobús. ',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tour3.jpg',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour3.jpg',
         url: 'http://www.pariscityvision.com/en/lyon-le-grand-tour',
       },
     ];
