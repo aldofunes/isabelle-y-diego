@@ -27,7 +27,7 @@ class Forecast extends React.Component {
 
     return data.map((day) => (
       <div key={day.time} className="column">
-        <p>{moment.unix(day.time).add(7, 'hours').format('ddd')}</p>
+        <p>{moment.unix(day.time).utcOffset(7).format('ddd')}</p>
         <Skycon
           id={day.time.toString()}
           color="white"
