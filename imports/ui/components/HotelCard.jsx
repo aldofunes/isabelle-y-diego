@@ -64,12 +64,23 @@ export default class HotelCard extends React.Component {
         </div>
 
         <div className="extra content">
-          <div className="right floated meta">
-            <a href="#" className="ui red inverted button">Mapa</a>
+          <div className="meta">
+            <a
+              href={`https://www.google.com.mx/maps/place/${this.props.latitude},${this.props.longitude}`}
+              className="ui red inverted icon button"
+              target="_blank"
+            >
+              <i className="google icon"/>
+              Mapa
+            </a>
           </div>
+
+          {/*
           <div className="left floated meta">
-            <a href="#" className="ui blue inverted button">Waze</a>
+            <a href="#" className="ui blue inverted icon button">Waze</a>
           </div>
+          */}
+
         </div>
 
       </div>
@@ -86,5 +97,7 @@ HotelCard.propTypes = {
   url: PropTypes.string.isRequired,
   phone: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
+  latitude: PropTypes.string.isRequired,
+  longitude: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

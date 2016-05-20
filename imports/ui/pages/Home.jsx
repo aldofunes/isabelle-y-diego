@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-parallax';
 
 import Banner from '../components/Banner.jsx';
 import Countdown from '../components/Countdown.jsx';
@@ -28,9 +29,21 @@ export default class Home extends React.Component {
 
         <Couple />
 
+        <Parallax
+          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego2.jpg"
+          strength={200}
+          className="ui center aligned"
+        />
+
         <DressCode />
 
         <Events />
+
+        <Parallax
+          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego3.jpg"
+          strength={200}
+          className="ui center aligned"
+        />
 
         <Gifts />
 

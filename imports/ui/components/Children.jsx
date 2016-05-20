@@ -11,7 +11,7 @@ export default class Children extends React.Component {
         _id: '1',
         name: 'Diego',
         bio: 'El balanceo de la familia, … ¡por el lado masculino! \n\n El que brincó de alegría al enterarse que tendría herman@s! \n\n El hermano mayor, el ídolo, el ejemplo, la referencia; la razón en carne y hueso para que todos practiquemos nuestro inglés (ahora que vive en Los Ángeles, California). \n\n No fue sencillo, pero hoy es de las pocas personas a poder dialogar al tú por tú con su papá en cuestiones de futbol americano: !chapeau! \n\n Gracias a él sabemos TODO lo que sucedió en Star Wars 1,2,3,4,5, 6 y 7; y en general TODO lo que sucede en el cine en general (está estudiando Film Studies). \n\n Sus tres pasiones: escribir, leer y tocar música. \n\n Lo que no puede faltar en su cuarto: libros, un instrumento de música, … una laptop y un cargador de celular (¡tiene 22 años!)',
-        picture: 'http://placehold.it/300',
+        picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/diego-junior.jpg',
       },
       {
         _id: '2',
