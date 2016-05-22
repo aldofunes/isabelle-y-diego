@@ -97,7 +97,7 @@ HotelCard.propTypes = {
   url: PropTypes.string.isRequired,
   phone: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
-  latitude: PropTypes.string.isRequired,
-  longitude: PropTypes.string.isRequired,
+  latitude: PropTypes.number.isRequired,
+  longitude: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
 };
