@@ -60,7 +60,7 @@ export default class Couple extends Component {
         </div>
 
           <WideImage
-            image="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego.jpg"
+            image="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego1.jpg"
             alt="Isabelle y Diego"
             text="El amor es grandioso"
           />
