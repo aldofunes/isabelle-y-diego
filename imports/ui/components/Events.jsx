@@ -15,7 +15,7 @@ export default class Events extends Component {
         description: 'Celebra con nosotros nuestra boda',
         google: 'https://www.google.com/maps/dir/Current+Location/45.955545,4.780199/',
         waze: 'https://waze.to/lr/hu05mky08e',
-        venue: 'Eglise de Saint Didier de Formanas',
+        venue: 'Eglise de Saint Didier de Formans',
         address: '35 Chemin du Berrier, 01600 Saint-Didier-de-Formans, France',
       },
       {

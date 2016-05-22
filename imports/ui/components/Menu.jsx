@@ -11,9 +11,9 @@ export default class Menu extends Component {
     return [
       { _id: '1', hash: 'banner', icon: 'home', title: 'Inicio' },
       { _id: '2', hash: 'countdown', icon: 'clock', title: 'Conteo' },
-      { _id: '3', hash: 'couple', icon: 'users', title: 'Familia' },
+      { _id: '3', hash: 'couple', icon: 'users', title: 'Los novios' },
       { _id: '4', hash: 'dress-code', icon: 'tags', title: 'Vestimenta' },
-      { _id: '5', hash: 'events', icon: 'calendar', title: 'Itinerario' },
+      { _id: '5', hash: 'events', icon: 'calendar', title: 'Día de la boda' },
       { _id: '6', hash: 'gifts', icon: 'gift', title: 'Regalos' },
       { _id: '7', hash: 'rsvp', icon: 'check', title: 'RSVP' },
       { _id: '8', hash: 'forecast', icon: 'rain', title: 'Clima' },

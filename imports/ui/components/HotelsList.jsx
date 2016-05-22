@@ -39,7 +39,7 @@ export default class HotelsList extends React.Component {
       },
       {
         _id: '3',
-        name: 'Châteou de Bagnols',
+        name: 'Château de Bagnol',
         stars: 5,
         location: 'Le Bourg, 69620 Bagnols, Francia',
         image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/chateau.jpg',
@@ -48,7 +48,7 @@ export default class HotelsList extends React.Component {
         email: 'info@chateaudebagnols.fr',
         latitude: 45.916646,
         longitude: 4.608237,
-        description: 'El hotel Château de Bagnols ocupa un monumento histórico con más de 8 ' +
+        description: 'El hotel Château de Bagnol ocupa un monumento histórico con más de 8 ' +
         'siglos de antigüedad situado en el corazón de Beaujolais, y alberga un restaurante de ' +
         'prestigio. Se encuentra en una finca con jardines de estilo francés, fosos, murallas, ' +
         'torres y piedras doradas rodeada de viñedos..',
