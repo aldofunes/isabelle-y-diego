@@ -152,6 +152,20 @@ export default class HotelsList extends React.Component {
         'sofá cama en el salón).',
         price: 1985,
       },
+      {
+        _id: '11',
+        name: 'Sofitel Lyon Bellecour',
+        stars: 5,
+        location: ' 20 Quai Gailleton, 02. La Presqu\'île, 69002 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/sofitel.jpg',
+        url: 'http://www.booking.com/hotel/fr/sofitel-lyon.es.html',
+        phone: '+33 4 72 41 20 20',
+        email: 'H0553@sofitel.com',
+        description: 'Este hotel de 5 estrellas está situado en el corazón de Lyon, a solo 450 ' +
+        'metros de la plaza de Bellecour, que alberga boutiques de lujo. Cuenta con centro de ' +
+        'fitness, gimnasio, hammam y centro de bienestar.',
+        price: 4179,
+      },
     ];
   }
 

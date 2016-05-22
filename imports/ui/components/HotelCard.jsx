@@ -74,7 +74,7 @@ export default class HotelCard extends React.Component {
           <div className="meta">
             <a
               href={`https://www.google.com.mx/maps/place/${this.props.latitude},${this.props.longitude}`}
-              className="ui red inverted icon button"
+              className="ui red inverted icon fluid button"
               target="_blank"
             >
               <i className="google icon"/>

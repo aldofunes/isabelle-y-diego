@@ -7,20 +7,20 @@ export default class HotelCards extends React.Component {
   hotels() {
     return [
       {
-        _id: '1',
-        name: 'Best Western Plaisance',
-        stars: 3,
-        location: '96 Avenue de la Libération, 69652 Villefranche-sur-Saône, Francia',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/western.jpg',
-        url: 'http://www.booking.com/hotel/fr/bestwesternplaisance.es.html',
-        phone: '+33 4 74 65 33 52',
-        email: 'info@hotel-plaisance.com',
-        latitude: 45.985170,
-        longitude: 4.716688,
-        description: 'Las habitaciones y suites del Best Western Plaisance están decoradas de ' +
-        'forma individual, disponen de sala de estar acogedora y confortable e incluyen todas ' +
-        'las comodidades necesarias, como conexión Wi-Fi gratuita, minibar y TV de pantalla plana.',
-        price: 1617,
+        _id: '11',
+        name: 'Sofitel Lyon Bellecour',
+        stars: 5,
+        location: ' 20 Quai Gailleton, 02. La Presqu\'île, 69002 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/sofitel.jpg',
+        url: 'http://www.booking.com/hotel/fr/sofitel-lyon.es.html',
+        phone: '+33 4 72 41 20 20',
+        email: 'H0553@sofitel.com',
+        latitude: 45.754312,
+        longitude: 4.834180,
+        description: 'Este hotel de 5 estrellas está situado en el corazón de Lyon, a solo 450 ' +
+        'metros de la plaza de Bellecour, que alberga boutiques de lujo. Cuenta con centro de ' +
+        'fitness, gimnasio, hammam y centro de bienestar.',
+        price: 4179,
       },
       {
         _id: '2',
@@ -37,23 +37,6 @@ export default class HotelCards extends React.Component {
         'Villefrance-sur-Saône y de la estación de tren. Dispone de piscina al aire libre, ' +
         'terraza con sombrillas y conexión Wi-Fi gratuita en todo el hotel..',
         price: 1719,
-      },
-      {
-        _id: '3',
-        name: 'Châteou de Bagnols',
-        stars: 5,
-        location: 'Le Bourg, 69620 Bagnols, Francia',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/chateau.jpg',
-        url: 'http://www.booking.com/hotel/fr/chateaudebagnols.es.html',
-        phone: '+33 4 74 71 40 00',
-        email: 'info@chateaudebagnols.fr',
-        latitude: 45.916646,
-        longitude: 4.608237,
-        description: 'El hotel Château de Bagnols ocupa un monumento histórico con más de 8 ' +
-        'siglos de antigüedad situado en el corazón de Beaujolais, y alberga un restaurante de ' +
-        'prestigio. Se encuentra en una finca con jardines de estilo francés, fosos, murallas, ' +
-        'torres y piedras doradas rodeada de viñedos..',
-        price: 7349,
       },
     ];
   }
@@ -72,6 +55,15 @@ export default class HotelCards extends React.Component {
         <div className="ui container">
           <div className="ui middle aligned three column stackable grid">
             {this.renderHotelCards()}
+            <div className="column">
+              <a
+                href="https://www.airbnb.com/s/lyon?guests=2&checkin=08%2F12%2F2016&checkout=08%2F14%2F2016&ss_id=74gxsyuz&source=bb&s_tag=4CyBLyfJ"
+                className="ui inverted blue large fluid button"
+                target="_blank"
+              >
+                Lyon en AirBnB
+              </a>
+            </div>
           </div>
           <br/>
           <Link to="recommendations" className="ui inverted brown fluid button">Ver más</Link>
