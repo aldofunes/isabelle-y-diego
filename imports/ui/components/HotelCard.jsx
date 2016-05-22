@@ -60,6 +60,13 @@ export default class HotelCard extends React.Component {
               </div>
             </div>
 
+            <div className="item">
+              <i className="building icon"/>
+              <div className="content">
+                {this.props.location}
+              </div>
+            </div>
+
           </div>
         </div>
 
