@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 
 import Fiancee from './Fiancee.jsx';
-import Children from './Children.jsx';
-import WideImage from './WideImage.jsx';
 
 export default class Couple extends Component {
   fiancees() {
@@ -57,23 +55,6 @@ export default class Couple extends Component {
               <Fiancee {...this.fiancees()[1]}/>
             </div>
           </div>
-        </div>
-
-          <WideImage
-            image="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego1.jpg"
-            alt="Isabelle y Diego"
-            text="El amor es grandioso"
-          />
-
-        <div className="ui container center aligned">
-          <h2>Nuestros hijos</h2>
-          <Children />
-          <h3>
-            Juntos nos encanta viajar, descubrir nuevos lugares y vivir nuevas experiencias, ver en
-            la televisión o asistir a los partidos de futbol (pero solo de los Dallas Cowboys o del
-            Real Madrid), y festejar juntos los acontecimientos familiares: cumpleaños, Navidad,
-            etc.
-          </h3>
         </div>
       </section>
     );
