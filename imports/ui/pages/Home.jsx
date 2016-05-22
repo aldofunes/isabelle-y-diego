@@ -12,6 +12,7 @@ import Gifts from '../components/Gifts.jsx';
 import HotelCards from '../components/HotelCards.jsx';
 import Menu from '../components/Menu.jsx';
 import RSVP from '../components/RSVP.jsx';
+import WitnessList from '../components/WitnessList.jsx';
 
 export default class Home extends React.Component {
   render() {
@@ -29,20 +30,22 @@ export default class Home extends React.Component {
 
         <Couple />
 
-        <Parallax
-          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego2.jpg"
-          strength={200}
-          className="ui center aligned"
+        <WitnessList />
+
+        <img
+          src="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego2.jpg"
+          alt="Isabelle y Diego"
+          className="ui fluid image"
         />
 
         <DressCode />
 
         <Events />
 
-        <Parallax
-          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego3.jpg"
-          strength={200}
-          className="ui center aligned"
+        <img
+          src="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego3.jpg"
+          alt="Isabelle y Diego"
+          className="ui fluid image"
         />
 
         <Gifts />

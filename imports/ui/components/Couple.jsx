@@ -3,13 +3,14 @@ import { Parallax } from 'react-parallax';
 
 import Fiancee from './Fiancee.jsx';
 import Children from './Children.jsx';
+import WideImage from './WideImage.jsx';
 
 export default class Couple extends Component {
   fiancees() {
     return [
       {
         _id: '1',
-        name: 'Isabelle Richards',
+        name: 'Isabelle Richard',
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/isabelle.jpg',
         description: 'Ella es “Sport Billy” como le dicen: aún más correr, nadar, rodar, esquiar, pero en realidad casi cualquier actividad deportiva es lo suyo. Estar pendiente de sus hijas, de las casas (pelear con los arquitectos y carpinteros), de la vida familiar en general, convocar reuniones y organizar los fines de semana con amigos, mandar whatsapp a horas tardías de la noche para cerciorarse que sus seres queridos estén bien, e ingeniarse para tener una actividad profesional que le permita realizar todas las acciones anteriores: ¡es ella! \n\n Sus actividades predilectas: ver a sus hijas contentas, hacer maletas (significa que un viaje se aproxima), buscar opciones de medicina alternativa, ver como reciclar más o mejor, comprar en descuento (porque así uno puede comprar más), comprar regalos (aun no en descuentos), pasar el verano con su familia en Francia, y tomarse una copa con sus amigos \n\n Lo que no puede faltar en su casa: ¡muchos niños!, un campo electromagnético, ensaladas, quesos, vino, … y un teléfono para encargar el resto de los alimentos \n\n Es una mujer muy afortunada: con Diego Junior tiene el hijo que nunca podrá tener (ella lo dice: “niños, no sé hacerlos”), tiene tres mujercitas fantásticas que la ocupan tanto que ni tiempo para malos pensamientos, y una red de peluqueros cuando necesita salir decentemente peinada',
       },
@@ -58,14 +59,11 @@ export default class Couple extends Component {
           </div>
         </div>
 
-        <Parallax
-          bgImage="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego.jpg"
-          blur={5}
-          strength={200}
-          className="ui center aligned"
-        >
-          <h1>El amor es grandioso</h1>
-        </Parallax>
+          <WideImage
+            image="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego.jpg"
+            alt="Isabelle y Diego"
+            text="El amor es grandioso"
+          />
 
         <div className="ui container center aligned">
           <h2>Nuestros hijos</h2>

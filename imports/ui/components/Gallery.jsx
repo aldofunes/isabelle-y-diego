@@ -47,17 +47,17 @@ export default class Gallery extends React.Component {
       {
         _id: '9',
         url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/maman-messe-aout.jpg',
-        description: 'Maman Messe Aout',
+        description: 'Monique Richard',
       },
       {
         _id: '10',
         url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/pierrete.jpg',
-        description: 'Pierrete Richards con su familia',
+        description: 'Pierrette Richard con su familia',
       },
       {
         _id: '11',
         url: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/star-wars.jpg',
-        description: 'A punto de ver Star Wars',
+        description: 'Saliendo de ver Star Wars',
       },
     ];
   }
