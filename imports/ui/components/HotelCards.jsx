@@ -61,7 +61,7 @@ export default class HotelCards extends React.Component {
                 className="ui inverted blue large fluid button"
                 target="_blank"
               >
-                Lyon en AirBnB
+                Lyon y la región en AirBnB
               </a>
             </div>
           </div>

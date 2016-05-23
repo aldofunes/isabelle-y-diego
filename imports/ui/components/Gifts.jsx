@@ -17,20 +17,28 @@ export default class Gifts extends React.Component {
             decimos de todo corazón.
           </h3>
 
-          <button className="ui inverted button" onClick={this.showModal}>
+          <button className="ui inverted icon button" onClick={this.showModal}>
+            <i class="gift icon"/>
             En verdad quiero regalarles algo
+            <i class="gift icon"/>
           </button>
         </div>
 
-        <div className="ui small basic modal" id="gift">
+        <div
+          className="ui small basic modal"
+          id="gift"
+          style={{
+            background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine.jpg") center',
+            backgroundSize: 'cover',
+          }}
+        >
           <i className="close icon"/>
           <div className="header">
             ¿En verdad quieres regalarnos algo?
           </div>
           <div className="image content">
             <div className="ui fluid image">
-              <img
-                src="http://www.southernseason.com/wp-content/uploads/2013/07/wine_pouring2.jpg"/>
+              <img src="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine2.jpg"/>
             </div>
             <div className="description">
               <p>
