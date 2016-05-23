@@ -48,7 +48,7 @@ export default class Children extends React.Component {
         'ver a sus amigos (se lleva el premio de la persona más social de la familia: ¡todos son ' +
         'sus amigos!) \n\n' +
         'Lo que no puede faltar en su cuarto: sus “doudous” (peluchitos para dormir), ' +
-        'disfraces, maquillaje, papel-tijeras-plumnoes para dibujar, … y los regalos que le ' +
+        'disfraces, maquillaje, papel-tijeras-plumones para dibujar, … y los regalos que le ' +
         'dan sus seres consentidos.',
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/catalina.jpg',
       },
