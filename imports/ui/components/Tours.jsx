@@ -13,7 +13,7 @@ export default class Tours extends React.Component {
         duration: '1 a 3 días',
         description: 'Disfruta ilimitado acceso a transporte público, descuentos a museos, ' +
         'tours, teatros, renta de bicicletas, cruceros en el río y más! ',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour1.jpg',
+        image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour1.jpg',
         url: 'https://www.lyoncitycard.com/?lang=2',
       },
       {
@@ -24,7 +24,7 @@ export default class Tours extends React.Component {
         duration: '4 h. 30 min',
         description: 'Descubre todas las maravillas de los viñedos del Beaujolais. Visita sus ' +
         'increíbles capillas y aldeas, entre otros. Incluye cata de vino. ',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour2.jpg',
+        image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour2.jpg',
         url: 'http://www.en.lyon-france.com/Things-to-do/Culture-Activities/Visit-Lyon-differently/Beaujolais-Le-Grand-Tour',
       },
       {
@@ -35,7 +35,7 @@ export default class Tours extends React.Component {
         duration: '1 día',
         description: 'Descubre la ciudad de Lyon y disfruta sus únicas y fantásticas vistas ' +
         'desde el segundo piso de un autobús. ',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour3.jpg',
+        image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/tour3.jpg',
         url: 'http://www.pariscityvision.com/en/lyon-le-grand-tour',
       },
     ];
