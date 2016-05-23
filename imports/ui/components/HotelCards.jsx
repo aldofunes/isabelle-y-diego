@@ -23,20 +23,20 @@ export default class HotelCards extends React.Component {
         price: 4179,
       },
       {
-        _id: '2',
-        name: 'Mercure Villefranche en Beaujolais',
-        stars: 4,
-        location: '384 Boulevard Louis Blanc, 69400 Villefranche-sur-Saône, Francia',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/mercure.jpg',
-        url: 'http://www.booking.com/hotel/fr/ici-amp-la.es.html',
-        phone: '+33 4 37 55 09 09',
-        email: 'reception@hotelicietla.com',
-        latitude: 45.987267,
-        longitude: 4.721084,
-        description: 'El Mercure Villefranche se encuentra a 200 metros del centro de ' +
-        'Villefrance-sur-Saône y de la estación de tren. Dispone de piscina al aire libre, ' +
-        'terraza con sombrillas y conexión Wi-Fi gratuita en todo el hotel..',
-        price: 1719,
+        _id: '4',
+        name: 'La Bastide',
+        stars: 3,
+        location: 'Le Bourg, 69640 Jarnioux, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/la-bastide.jpg',
+        url: 'http://www.booking.com/hotel/fr/la-bastide-jarnioux.es.html',
+        phone: '+33 4 74 02 86 29',
+        email: 'contact@labastidejarnioux.fr',
+        latitude: 45.965604,
+        longitude: 4.625037,
+        description: 'La Bastide B&B ofrece alojamiento moderno con vistas a un jardín, una ' +
+        'terraza y conexión Wi-Fi gratuita. Ocupa un edificio del siglo XIX situado en ' +
+        'Jarnioux, a escasos 10 km de Villefranche-sur-Saône.',
+        price: 2073,
       },
     ];
   }

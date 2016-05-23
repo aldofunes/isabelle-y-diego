@@ -49,14 +49,14 @@ export default class HotelCard extends React.Component {
             <div className="item">
               <i className="phone icon"/>
               <div className="content">
-                {this.props.phone}
+                <a href={`tel:${this.props.phone}`}>{this.props.phone}</a>
               </div>
             </div>
 
             <div className="item">
               <i className="envelope icon"/>
               <div className="content">
-                {this.props.email}
+                <a href={`mailto:${this.props.email}`}>{this.props.email}</a>
               </div>
             </div>
 

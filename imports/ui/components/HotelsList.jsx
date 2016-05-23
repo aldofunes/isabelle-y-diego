@@ -3,40 +3,87 @@ import React from 'react';
 import HotelsListItem from './HotelsListItem.jsx';
 
 export default class HotelsList extends React.Component {
-  hotels() {
+  hotelsLyon() {
     return [
       {
         _id: '1',
-        name: 'Best Western Plaisance',
-        stars: 3,
-        location: '96 Avenue de la Libération, 69652 Villefranche-sur-Saône, Francia',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/western.jpg',
-        url: 'http://www.booking.com/hotel/fr/bestwesternplaisance.es.html',
-        phone: '+33 4 74 65 33 52',
-        email: 'info@hotel-plaisance.com',
-        latitude: 45.985170,
-        longitude: 4.716688,
-        description: 'Las habitaciones y suites del Best Western Plaisance están decoradas de ' +
-        'forma individual, disponen de sala de estar acogedora y confortable e incluyen todas ' +
-        'las comodidades necesarias, como conexión Wi-Fi gratuita, minibar y TV de pantalla plana.',
-        price: 1617,
+        name: 'Sofitel Lyon Bellecour',
+        stars: 5,
+        location: '20 Quai Gailleton, 02. La Presqu\'île, 69002 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/sofitel.jpg',
+        url: 'http://www.booking.com/hotel/fr/le-royal-lyon.es.html?label=gen173nr-1DCAsoTUINbGUtcm95YWwtbHlvbkgzYgVub3JlZmigAYgBAZgBCrgBDMgBDNgBA-gBAagCAw;sid=1e44fae8a40d5795ea23ecbd79c8b196;dcid=12;dist=0&group_adults=2&sb_price_type=total&type=total&',
+        phone: '+33 4 7837 5731',
+        email: 'leroyal@institutpaulbocuse.com',
+        description: 'El Hotel Le Royal Lyon - MGallery Collection ofrece vistas a la Place ' +
+        'Bellecour, en el centro de Lyon, y está a solo 10 minutos a pie del centro histórico ' +
+        'de Lyon y a 5 km de Cité Internationale. Hay un bar salón y conexión WiFi gratuita en ' +
+        'todas las instalaciones.',
+        price: 2786,
       },
       {
         _id: '2',
-        name: 'Mercure Villefranche en Beaujolais',
+        name: 'Le Royal Lyon',
         stars: 4,
-        location: '384 Boulevard Louis Blanc, 69400 Villefranche-sur-Saône, Francia',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/mercure.jpg',
-        url: 'http://www.booking.com/hotel/fr/ici-amp-la.es.html',
-        phone: '+33 4 37 55 09 09',
-        email: 'reception@hotelicietla.com',
-        latitude: 45.987267,
-        longitude: 4.721084,
-        description: 'El Mercure Villefranche se encuentra a 200 metros del centro de ' +
-        'Villefrance-sur-Saône y de la estación de tren. Dispone de piscina al aire libre, ' +
-        'terraza con sombrillas y conexión Wi-Fi gratuita en todo el hotel..',
-        price: 1719,
+        location: '20 Place Bellecour, 02. La Presqu\'île, 69002 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/le-royal.jpg',
+        url: 'http://www.booking.com/hotel/fr/sofitel-lyon.es.html',
+        phone: '+33 4 7241 2020',
+        email: 'H0553@sofitel.com',
+        description: 'Este hotel de 5 estrellas está situado en el corazón de Lyon, a solo 450 ' +
+        'metros de la plaza de Bellecour, que alberga boutiques de lujo. Cuenta con centro de ' +
+        'fitness, gimnasio, hammam y centro de bienestar.',
+        price: 4179,
       },
+      {
+        _id: '3',
+        name: 'Mercure Lyon Centre Plaza République',
+        stars: 4,
+        location: '5 Rue Stella, 02. La Presqu\'île, 69002 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/mercure-lyon.jpg',
+        url: 'http://www.booking.com/hotel/fr/lyon-plaza-republique.es.html',
+        phone: '+33 4 7837 5050',
+        email: 'h2951@accor.com',
+        description: 'El Mercure Lyon Centre Plaza République, situado en la Presqu\'ile de Lyon,' +
+        ' en el centro de la ciudad, a 10 minutos a pie del centro histórico, se ha renovado ' +
+        'totalmente en junio de 2015 y ofrece alojamiento insonorizado con aire acondicionado y ' +
+        'conexión WiFi gratuita.',
+        price: 1837,
+      },
+      {
+        _id: '4',
+        name: 'Cour des Loges',
+        stars: 5,
+        location: '6, rue du Boeuf, 05. Centro histórico de Lyon, 69005 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/cour-des-loges.jpg',
+        url: 'http://www.booking.com/hotel/fr/courdesloges.es.html?label=gen173nr-1DCAsoTUIMY291cmRlc2xvZ2VzSDNiBW5vcmVmaKABiAEBmAEKuAEMyAEM2AED6AEBqAID;sid=1e44fae8a40d5795ea23ecbd79c8b196;dcid=4;dist=0&group_adults=2&no_rooms=1&sb_price_type=total&type=total&',
+        phone: '+33 4 7277 4444 ',
+        email: 'contact@courdesloges.com',
+        description: 'Situado en el casco antiguo de Lyon, el Cour des Loges consta de 4 ' +
+        'edificios renacentistas restaurados ubicados alrededor de un patio con techo ' +
+        'acristalado. Cuenta con 2 restaurantes, 1 bodega y 1 lujoso spa con una piscina ' +
+        'climatizada con contra-corriente.',
+        price: 4644.33,
+      },
+      {
+        _id: '5',
+        name: 'Villa Florentine',
+        stars: 5,
+        location: '25 Montée St Barthélémy, 05. Centro histórico de Lyon, 69005 Lyon, Francia',
+        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/villa-florentine.jpg',
+        url: 'http://www.booking.com/hotel/fr/villaflorentine.es.html?label=gen173nr-1DCAsoTUIPdmlsbGFmbG9yZW50aW5lSDNiBW5vcmVmaKABiAEBmAEKuAEMyAEM2AED6AEBqAID;sid=1e44fae8a40d5795ea23ecbd79c8b196;dcid=4;dist=0&group_adults=2&no_rooms=1&sb_price_type=total&type=total&',
+        phone: '+33 4 7256 5656',
+        email: '',
+        description: 'La Villa Florentine está en el corazón del casco antiguo de Lyon y goza de ' +
+        'vistas panorámicas a la ciudad. Este antiguo convento dispone de un restaurante con una ' +
+        'estrella Michelin, de habitaciones elegantes y de conexión Wi-Fi gratuita en todo el ' +
+        'establecimiento.',
+        price: 4179,
+      },
+    ];
+  }
+
+  hotelsJarnioux() {
+    return [
       {
         _id: '3',
         name: 'Château de Bagnol',
@@ -63,6 +110,8 @@ export default class HotelsList extends React.Component {
         url: 'http://www.booking.com/hotel/fr/la-bastide-jarnioux.es.html',
         phone: '+33 4 74 02 86 29',
         email: 'contact@labastidejarnioux.fr',
+        latitude: 45.965604,
+        longitude: 4.625037,
         description: 'La Bastide B&B ofrece alojamiento moderno con vistas a un jardín, una ' +
         'terraza y conexión Wi-Fi gratuita. Ocupa un edificio del siglo XIX situado en ' +
         'Jarnioux, a escasos 10 km de Villefranche-sur-Saône.',
@@ -152,38 +201,51 @@ export default class HotelsList extends React.Component {
         'sofá cama en el salón).',
         price: 1985,
       },
-      {
-        _id: '11',
-        name: 'Sofitel Lyon Bellecour',
-        stars: 5,
-        location: ' 20 Quai Gailleton, 02. La Presqu\'île, 69002 Lyon, Francia',
-        image: 'http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/sofitel.jpg',
-        url: 'http://www.booking.com/hotel/fr/sofitel-lyon.es.html',
-        phone: '+33 4 72 41 20 20',
-        email: 'H0553@sofitel.com',
-        description: 'Este hotel de 5 estrellas está situado en el corazón de Lyon, a solo 450 ' +
-        'metros de la plaza de Bellecour, que alberga boutiques de lujo. Cuenta con centro de ' +
-        'fitness, gimnasio, hammam y centro de bienestar.',
-        price: 4179,
-      },
     ];
   }
 
-  renderHotelsListItems() {
-    return this.hotels().map((hotel) => (
+  renderHotelsLyonListItems() {
+    return this.hotelsLyon().map((hotel) => (
       <HotelsListItem key={hotel._id} {...hotel}/>
     ));
   }
 
+  renderHotelsJarniouxListItems() {
+    return this.hotelsJarnioux().map((hotel) => (
+      <HotelsListItem key={hotel._id} {...hotel}/>
+    ));
+  }
 
   render() {
     return (
       <section id="hotels-list">
         <div className="ui container">
-          <h2 className="ui header">Hoteles recomendados</h2>
+          <h1 className="ui header">Hoteles recomendados</h1>
+
+          <h2>Hoteles en Lyon</h2>
           <div className="ui vertically divided grid">
-            {this.renderHotelsListItems()}
+            {this.renderHotelsLyonListItems()}
           </div>
+
+          <h2>Hoteles en Jarnioux</h2>
+          <div className="ui vertically divided grid">
+            {this.renderHotelsJarniouxListItems()}
+          </div>
+
+          <h3>Agencias y portales</h3>
+          <p>
+            Sandrine Baeza, amiga de la familia trabajando en la agencia Thomas Cook en la región de
+            Lyon y está a sus órdenes:
+            <a href="mailto:sandrine.baeza@thomascook.fr"> sandrine.baeza@thomascook.fr</a>
+          </p>
+          <p>
+            Te recomendamos visitar <a href="www.airbnb.com">airbnb.com</a> si buscas alguna casa,
+            departamento o solamente un caurto
+          </p>
+          <p>
+            Para una lista completa de hoteles, visita <a href="www.booking.com">Booking.com</a>
+          </p>
+
         </div>
       </section>
     );
