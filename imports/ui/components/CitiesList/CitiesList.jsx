@@ -10,7 +10,11 @@ export default class CitiesList extends React.Component {
         name: 'Lyon',
         image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/cities/lyon.jpg',
         url: 'http://www.france-voyage.com/francia-guia-turismo/lyon-669.htm',
-        description: 'Lyon, capital de la región Ródano-Alpes, es famosa por su centro histórico, inscrito en el patrimonio mundial de la UNESCO. Situado entre la colina de Fourvière y el Saona, el Viejo Lyon está repleto de tesoros. Las calles pintorescas, las mansiones renacentistas, la catedral, sus traboules (pasajes cerrados) y los patios interiores, te maravillaran al instante. Es imprescindible pasear por las calles de Saint-Jean, Judería o del Buey que están repletas de atractivos.',
+        description: 'Ciudad Patrimonio Mundial de la Humanidad por la UNESCO \n\n' +
+        'Gran ciudad bimilenaria y capital de la seda, en la confluencia del Ródano y del Saona, Lyon está adosada a las colinas de Fourvière y de la Croix Rousse. Le ofrece un viaje insólito por el tiempo y las culturas (ver los anfiteatros romanos y el Viejo Lyon renacentista), con su centro incluido en el Patrimonio Mundial, el recodo de sus calles estrechas, sus “traboules“ (pasadizos) a lo largo de los muelles animados, las grandes plazas de la península y, durante la noche, los más de 200 lugares iluminados. \n\n' +
+        'Cruzando el río Saône, la Península alberga el Museo de Bellas Artes, segundo museo de Francia tras el Louvre, el Museo de los Tejidos y de las Artes Decorativas muestra viva de la industria de la seda en la localidad' +
+        'Lyon también es famosa por ser la capital de la gastronomía francesa: de las grandes mesas Estrella Michelin a las tabernas ("Bouchons lyonnais"), sus papilas le agradecerán la parada.\n\n' +
+        'Gran metrópolis, los amantes de las compras la disfrutarán: creadores, moda, anticuarios, mercados, plazas, jardines: ¡Lyon te sorprenderá!',
       },
       {
         _id: '2',

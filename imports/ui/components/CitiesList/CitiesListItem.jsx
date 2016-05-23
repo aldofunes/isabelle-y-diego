@@ -1,6 +1,14 @@
 import React, { PropTypes } from 'react';
+const markdown = require('markdown-it')({
+  xhtmlOut: true, // Use '/' to close single tags (<br />).
+  breaks: true, // Convert '\n' in paragraphs into <br>
+});
 
 export default class CitiesListItem extends React.Component {
+  rawMarkup() {
+    return { __html: markdown.renderInline(this.props.description) };
+  }
+
   render() {
     return (
       <section className="city">
@@ -11,7 +19,7 @@ export default class CitiesListItem extends React.Component {
             </div>
             <div className="ten wide column">
               <h1 className="ui header">{this.props.name}</h1>
-              <p>{this.props.description}</p>
+              <p dangerouslySetInnerHTML={this.rawMarkup()}/>
               <a
                 href={this.props.url}
                 target="_blank"
