@@ -7,7 +7,7 @@ import Recommendations from '../../ui/pages/Recommendations.jsx';
 import RSVPs from '../../ui/pages/RSVPs.jsx';
 
 export const renderRoutes = () => (
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route component={MainLayout}>
       <Route path="/" component={Home} />
       <Route path="/recommendations" component={Recommendations} />
