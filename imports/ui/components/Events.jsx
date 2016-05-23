@@ -11,7 +11,7 @@ export default class Events extends Component {
         image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/events/church1.jpg',
         image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/events/church2.jpg',
         date: '13 de agosto, 2016',
-        time: '3:30 PM',
+        time: '4:00 PM',
         description: 'Celebra con nosotros nuestra boda',
         google: 'https://www.google.com/maps/dir/Current+Location/45.955545,4.780199/',
         waze: 'https://waze.to/lr/hu05mky08e',
