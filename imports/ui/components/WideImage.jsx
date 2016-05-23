@@ -9,7 +9,11 @@ export default class WideImage extends React.Component {
           alt={this.props.alt}
           className="ui fluid image"
         />
-        <h1 className="text">{this.props.text}</h1>
+        <div className="text">
+          <div className="ui container">
+            <h2 className="header">{this.props.text}</h2>
+          </div>
+        </div>
       </div>
     );
   }
