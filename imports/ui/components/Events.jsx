@@ -28,7 +28,7 @@ export default class Events extends Component {
         description: 'Cocktail de inicio del festejo: el tradicional "vin d\'honneur" francés: Champagne, tequila,… y algo más!',
         google: 'https://www.google.com/maps/dir/Current+Location/Manoir+de+la+Garde,+170+impasse+de+la+Garde,+69640+Jarnioux,+France/',
         waze: 'https://waze.to/lr/hu05m90pkp',
-        venue: 'Terraza de Manoir de la garde',
+        venue: 'Terraza del Manoir de la Garde',
         address: '170 impasse de la Garde, 69640 Jarnioux, France',
       },
       {
@@ -41,7 +41,7 @@ export default class Events extends Component {
         description: '¡Cena y baile para todos!',
         google: 'https://www.google.com/maps/dir/Current+Location/Manoir+de+la+Garde,+170+impasse+de+la+Garde,+69640+Jarnioux,+France/',
         waze: 'https://waze.to/lr/hu05m90pkp',
-        venue: 'Salón de Manoir de la garde',
+        venue: 'Salón del Manoir de la Garde',
         address: '170 impasse de la Garde, 69640 Jarnioux, France',
       },
     ];
