@@ -28,7 +28,7 @@ export default class Gifts extends React.Component {
           className="ui small basic modal"
           id="gift"
           style={{
-            background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine.jpg") center',
+            background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine2.jpg") center',
             backgroundSize: 'cover',
           }}
         >
@@ -38,7 +38,7 @@ export default class Gifts extends React.Component {
           </div>
           <div className="image content">
             <div className="ui fluid image">
-              <img src="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine2.jpg"/>
+              <img src="http://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine.jpg"/>
             </div>
             <div className="description">
               <p>
