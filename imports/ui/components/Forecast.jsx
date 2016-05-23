@@ -54,6 +54,7 @@ class Forecast extends React.Component {
 
     return (
       <div id="content">
+        <h2>El clima en Jarnioux esta semana</h2>
         <h5>{data.daily.summary}</h5>
         <div className="ui grid">
           <div className="sixteen wide tablet four wide computer column">
