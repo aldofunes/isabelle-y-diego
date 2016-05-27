@@ -249,6 +249,11 @@ export default class Gallery extends React.Component {
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo4.jpg',
         description: '',
       },
+      {
+        _id: '49',
+        url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo5.jpg',
+        description: '',
+      },
     ];
   }
 
