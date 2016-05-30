@@ -3,7 +3,7 @@ import React from 'react';
 import WitnessItem from './WitnessItem';
 
 export  default class WitnessList extends React.Component {
-  witnesses() {
+  witnessesBride() {
     return [
       {
         _id: '1',
@@ -17,6 +17,11 @@ export  default class WitnessList extends React.Component {
         image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/witnesses/berenice.jpg',
         description: 'Debe haber sido algún error de la naturaleza que no haya nacido de mi mamá porque para mí es otra hermana, y sus hij@s, otros hij@s más para mí. Qué no hemos hecho juntas: ser vecinas de condominio, viajar solas, pasar vacaciones en familia, educar a nuestros hij@s, irnos de compras, irnos de parranda, llorar, reír, apoyarnos, compartir alegrías y problemas, idear negocios y sobre todo planear la vida. Amiga del alma, sólo le pido a Dios que nos conceda muchos años más así de amistad. ',
       },
+    ];
+  }
+
+  witnessesGroom() {
+    return [
       {
         _id: '3',
         name: 'Diego',
@@ -32,19 +37,23 @@ export  default class WitnessList extends React.Component {
     ];
   }
 
-  renderWitnessItems() {
-    return this.witnesses().map((witness) => (
-      <WitnessItem key={witness._id} {...witness} />
-    ));
-  }
-
   render() {
     return (
       <section id="witnesses">
         <div className="ui container">
           <h1 style={{ textAlign: 'center' }}>Los padrinos</h1>
           <div className="ui grid">
-            {this.renderWitnessItems()}
+            <div className="row">
+              <h2>De la novia:</h2>
+            </div>
+            {this.witnessesBride().map((witness) => (
+              <WitnessItem key={witness._id} {...witness} />
+            ))}
+
+            <h2>Del novio:</h2>
+            {this.witnessesGroom().map((witness) => (
+              <WitnessItem key={witness._id} {...witness} />
+            ))}
           </div>
         </div>
       </section>
