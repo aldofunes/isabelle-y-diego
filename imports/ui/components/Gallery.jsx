@@ -202,27 +202,27 @@ export default class Gallery extends React.Component {
       {
         _id: '40',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo1.jpg',
-        description: '',
+        description: 'Los abuelos: Mercedes y Diego',
       },
       {
         _id: '41',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo2.jpg',
-        description: '',
+        description: 'Juan Ignacio y su familia',
       },
       {
         _id: '42',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo3.jpg',
-        description: '',
+        description: 'Mercedes y su familia',
       },
       {
         _id: '43',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo4.jpg',
-        description: '',
+        description: 'Pablo y su familia',
       },
       {
         _id: '44',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo5.jpg',
-        description: '',
+        description: 'Rafael y su familia',
       },
     ];
   }
@@ -232,27 +232,27 @@ export default class Gallery extends React.Component {
       {
         _id: '45',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo1.jpg',
-        description: '',
+        description: 'Louis Richard',
       },
       {
         _id: '46',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo2.jpg',
-        description: '',
+        description: 'Monique Richard ✝',
       },
       {
         _id: '47',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo3.jpg',
-        description: '',
+        description: 'Claire-Pascale y su familia',
       },
       {
         _id: '48',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo4.jpg',
-        description: '',
+        description: 'Pierrette y su familia',
       },
       {
         _id: '49',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo5.jpg',
-        description: '',
+        description: 'Anne Cécile y su familia',
       },
     ];
   }
