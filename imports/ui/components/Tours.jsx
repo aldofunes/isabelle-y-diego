@@ -45,7 +45,7 @@ export default class Tours extends React.Component {
     return [
       {
         _id: '1',
-        name: 'Museo del Vino Georges Duboeufz',
+        name: 'Museo del Vino Georges Duboeuf',
         image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/tours/georges-duboeuf.jpg',
         url: 'http://www.hameauduvin.com/en/',
       },

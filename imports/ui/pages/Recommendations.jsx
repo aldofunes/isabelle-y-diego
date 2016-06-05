@@ -20,7 +20,7 @@ export default class Recommendations extends React.Component {
         <section id="banner">
           <div className="ui center aligned grid">
             <div className="four column">
-              <h1>Jarnioux & Lyon</h1>
+              <h1>Visitas en la región</h1>
             </div>
           </div>
         </section>
@@ -28,8 +28,6 @@ export default class Recommendations extends React.Component {
         <CitiesList />
 
         <Tours />
-
-        <HotelsList />
 
       </div>
     );

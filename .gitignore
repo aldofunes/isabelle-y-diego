@@ -82,3 +82,5 @@ jspm_packages
 
 settings.json
 client/main.css
+
+.deploy

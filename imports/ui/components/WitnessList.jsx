@@ -41,7 +41,7 @@ export  default class WitnessList extends React.Component {
     return (
       <section id="witnesses">
         <div className="ui container">
-          <h1 style={{ textAlign: 'center' }}>Los padrinos</h1>
+          <h1 style={{ textAlign: 'center' }}>Los testigos</h1>
           <div className="ui grid">
             <div className="row">
               <h2>De la novia:</h2>

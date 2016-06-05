@@ -44,7 +44,7 @@ export default class HotelCards extends React.Component {
   renderHotelCards() {
     return this.hotels().map((hotel) => (
       <div key={hotel._id} className="column">
-        <HotelCard {...hotel}/>
+        <HotelCard {...hotel} />
       </div>
     ));
   }
@@ -56,17 +56,22 @@ export default class HotelCards extends React.Component {
           <div className="ui middle aligned three column stackable grid">
             {this.renderHotelCards()}
             <div className="column">
-              <a
-                href="https://www.airbnb.com/s/lyon?guests=2&checkin=08%2F12%2F2016&checkout=08%2F14%2F2016&ss_id=74gxsyuz&source=bb&s_tag=4CyBLyfJ"
-                className="ui inverted blue large fluid button"
-                target="_blank"
-              >
-                Lyon y la región en AirBnB
-              </a>
+              <div className="ui large vertical buttons" style={{display: 'block'}}>
+                <a
+                  href="https://www.airbnb.com/s/lyon?guests=2&checkin=08%2F12%2F2016&checkout=08%2F14%2F2016&ss_id=74gxsyuz&source=bb&s_tag=4CyBLyfJ"
+                  className="ui inverted blue button"
+                  target="_blank"
+                >
+                  Lyon y la región en AirBnB
+                </a>
+                <Link to="hotels" className="ui inverted blue button">Más hoteles</Link>
+              </div>
             </div>
           </div>
-          <br/>
-          <Link to="recommendations" className="ui inverted brown fluid button">Ver más</Link>
+          <br />
+          <Link to="recommendations" className="ui inverted brown fluid button">
+            Visitas en la región
+          </Link>
         </div>
       </section>
     );
