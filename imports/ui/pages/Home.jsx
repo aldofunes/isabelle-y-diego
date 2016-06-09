@@ -13,6 +13,7 @@ import Gifts from '../components/Gifts.jsx';
 import HotelCards from '../components/HotelCards.jsx';
 import Menu from '../components/Menu.jsx';
 import RSVP from '../components/RSVP.jsx';
+import TourCards from '../components/TourCards.jsx';
 import WitnessList from '../components/WitnessList.jsx';
 import WideImage from '../components/WideImage.jsx';
 
@@ -74,6 +75,8 @@ export default class Home extends React.Component {
         <Forecast />
 
         <HotelCards />
+
+        <TourCards />
 
         <Gallery />
 

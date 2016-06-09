@@ -24,10 +24,17 @@ export const insertConfirmation = new ValidatedMethod({
   }).validator(),
 
   run({ email, guests }) {
-    const confirmationId = Confirmations.insert({
-      email,
-      createdAt: new Date(),
-    });
+    const confirmation = Confirmations.findOne({ email });
+    let confirmationId = '';
+
+    if (confirmation) {
+      confirmationId = confirmation._id;
+    } else {
+      confirmationId = Confirmations.insert({
+        email,
+        createdAt: new Date(),
+      });
+    }
 
     guests.forEach((guest) => {
       insertGuest.call({

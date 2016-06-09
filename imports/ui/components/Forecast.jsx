@@ -25,6 +25,13 @@ class Forecast extends React.Component {
 
     data.shift();
 
+    let minTemp = data[0].temperatureMin;
+    data.forEach((day) => {
+      if (day.temperatureMin < minTemp) {
+        minTemp = day.temperatureMin;
+      }
+    });
+
     return data.map((day) => (
       <div key={day.time} className="column">
         <p>{moment.unix(day.time).utcOffset(7).format('ddd')}</p>
@@ -39,7 +46,7 @@ class Forecast extends React.Component {
           className="temp-bar"
           style={{
             height: `${(day.temperatureMax - day.temperatureMin) * 10}px`,
-            top: `${day.temperatureMin * 10}px`,
+            top: `${(day.temperatureMin - minTemp) * 10}px`,
           }}
         >
           <span className="temp-min">{Math.round(day.temperatureMin)}°</span>

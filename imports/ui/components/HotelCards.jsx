@@ -53,6 +53,7 @@ export default class HotelCards extends React.Component {
     return (
       <section id="hotels">
         <div className="ui container">
+          <h2 className="ui header">Hoteles</h2>
           <div className="ui middle aligned three column stackable grid">
             {this.renderHotelCards()}
             <div className="column">
@@ -68,10 +69,6 @@ export default class HotelCards extends React.Component {
               </div>
             </div>
           </div>
-          <br />
-          <Link to="recommendations" className="ui inverted brown fluid button">
-            Visitas en la región
-          </Link>
         </div>
       </section>
     );

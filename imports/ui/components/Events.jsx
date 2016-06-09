@@ -37,7 +37,7 @@ export default class Events extends Component {
         image1: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/events/reception1.jpg',
         image2: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/events/reception2.jpg',
         date: '13 de agosto, 2016',
-        time: '8:00 PM',
+        time: '7:30 PM',
         description: '¡Cena y baile para todos!',
         google: 'https://www.google.com/maps/dir/Current+Location/Manoir+de+la+Garde,+170+impasse+de+la+Garde,+69640+Jarnioux,+France/',
         waze: 'https://waze.to/lr/hu05m90pkp',
