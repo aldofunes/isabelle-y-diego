@@ -42,7 +42,7 @@ export  default class WitnessList extends React.Component {
       <section id="witnesses">
         <div className="ui container">
           <h1 style={{ textAlign: 'center' }}>Los testigos</h1>
-          <div className="ui grid">
+          <div className="ui middle aligned grid">
             <div className="row">
               <h2>De la novia:</h2>
             </div>

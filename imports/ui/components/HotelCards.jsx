@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-
 import HotelCard from './HotelCard.jsx';
 
 export default class HotelCards extends React.Component {
@@ -57,7 +56,7 @@ export default class HotelCards extends React.Component {
           <div className="ui middle aligned three column stackable grid">
             {this.renderHotelCards()}
             <div className="column">
-              <div className="ui large vertical buttons" style={{display: 'block'}}>
+              <div className="ui large vertical buttons" style={{ display: 'block' }}>
                 <a
                   href="https://www.airbnb.com/s/lyon?guests=2&checkin=08%2F12%2F2016&checkout=08%2F14%2F2016&ss_id=74gxsyuz&source=bb&s_tag=4CyBLyfJ"
                   className="ui inverted blue button"

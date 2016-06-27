@@ -26,8 +26,10 @@ mdg:validated-method
 react-meteor-data
 aldeed:collection2
 dburles:collection-helpers
-
+check
 
 # Development
-msavin:mongol
-check
+#msavin:mongol
+
+# Internationalization
+universe:i18n

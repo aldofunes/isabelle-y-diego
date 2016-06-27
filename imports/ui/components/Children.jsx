@@ -70,6 +70,7 @@ export default class Children extends React.Component {
   }
 
   render() {
+    console.log(this.children());
     return (
       <section id="children">
         <div className="ui container center aligned">

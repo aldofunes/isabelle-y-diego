@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import HotelsList from '../components/HotelsList.jsx';
 import Tours from '../components/Tours.jsx';
 import CitiesList from '../components/CitiesList/CitiesList.jsx';
 
