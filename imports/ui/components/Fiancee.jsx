@@ -5,10 +5,6 @@ const markdown = require('markdown-it')({
 });
 
 export default class Fiancee extends React.Component {
-  rawMarkup() {
-    return { __html: markdown.renderInline(this.props.description) };
-  }
-
   render() {
     return (
       <div className="ui center aligned">
@@ -16,7 +12,7 @@ export default class Fiancee extends React.Component {
 
         <h2 className="header">{this.props.name}</h2>
         <div className="description">
-          <p dangerouslySetInnerHTML={this.rawMarkup()}/>
+          <p dangerouslySetInnerHTML={{ __html: markdown.renderInline(this.props.description) }}/>
         </div>
       </div>
     );
