@@ -2,7 +2,7 @@
   "name": "main",
   "private": true,
   "scripts": {
-    "start": "UNIVERSE_I18N_LOCALES='es, fr' meteor run --settings .deploy/settings.json",
+    "start": "UNIVERSE_I18N_LOCALES='es, fr' meteor run",
     "build:css": "lessc client/main.less client/main.css --autoprefix='last 2 versions'",
     "deploy": "cd .deploy && mup deploy"
   },
