@@ -18,9 +18,9 @@ export default class Gifts extends React.Component {
           </h3>
 
           <button className="ui inverted icon button" onClick={this.showModal}>
-            <i class="gift icon"/>
+            <i className="gift icon"/>
             En verdad quiero regalarles algo
-            <i class="gift icon"/>
+            <i className="gift icon"/>
           </button>
         </div>
 

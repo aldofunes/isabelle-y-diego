@@ -1,5 +1,5 @@
 import React from 'react';
-import i18n from 'meteor/universe:i18n';
+import { TAPi18n } from 'meteor/tap:i18n';
 import Footer from '../components/Footer.jsx';
 
 export default class MainLayout extends React.Component {
@@ -11,10 +11,9 @@ export default class MainLayout extends React.Component {
     } else {
       lang = 'es';
     }
+    TAPi18n.setLanguage(lang);
 
-    i18n.setLocale(lang);
-
-    console.log(i18n.__('home.couple.bride.description'));
+    console.log(TAPi18n.__('home.couple.bride.description'));
   }
 
   render() {

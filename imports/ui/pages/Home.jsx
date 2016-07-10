@@ -1,7 +1,5 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import i18n from 'meteor/universe:i18n';
-
 import Banner from '../components/Banner.jsx';
 import Countdown from '../components/Countdown.jsx';
 import Children from '../components/Children.jsx';
@@ -20,7 +18,6 @@ import WideImage from '../components/WideImage.jsx';
 
 export default class Home extends React.Component {
   render() {
-    i18n.setLocale('es');
     return (
       <div id="home">
 

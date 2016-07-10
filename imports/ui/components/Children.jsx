@@ -1,6 +1,5 @@
 import React from 'react';
-import i18n from 'meteor/universe:i18n';
-const t = i18n.createReactiveTranslator('home.children');
+import { TAPi18n } from 'meteor/tap:i18n';
 const markdown = require('markdown-it')({
   xhtmlOut: true, // Use '/' to close single tags (<br />).
   breaks: true, // Convert '\n' in paragraphs into <br>
@@ -14,25 +13,25 @@ export default class Children extends React.Component {
       {
         _id: '1',
         name: 'Diego',
-        bio: t('diego'),
+        bio: TAPi18n.__('home.children.diego'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/diego-junior.jpg',
       },
       {
         _id: '2',
         name: 'Isabelle',
-        bio: t('isabelle'),
+        bio: TAPi18n.__('home.children.isabelle'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/isabelle-hija.jpg',
       },
       {
         _id: '3',
         name: 'Anne Hélène',
-        bio: t('anneHelene'),
+        bio: TAPi18n.__('home.children.anneHelene'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/anne-helene.jpg',
       },
       {
         _id: '4',
         name: 'Catalina',
-        bio: t('catalina'),
+        bio: TAPi18n.__('home.children.catalina'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/catalina.jpg',
       },
     ];
@@ -46,7 +45,7 @@ export default class Children extends React.Component {
     return (
       <section id="children">
         <div className="ui container center aligned">
-          <h2>{i18n.__('home.children.header')}</h2>
+          <h2>{TAPi18n.__('home.children.header')}</h2>
           <div className="ui middle aligned four column doubling grid">
             {this.children.map((child) => (
               <div key={child._id} className="column">
