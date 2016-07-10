@@ -14,7 +14,7 @@ export default class MainLayout extends React.Component {
 
     i18n.setLocale(lang);
 
-    // console.log(i18n.__('home.couple.bride.description'));
+    console.log(i18n.__('home.couple.bride.description'));
   }
 
   render() {
