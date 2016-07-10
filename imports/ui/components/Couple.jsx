@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import i18n from 'meteor/universe:i18n';
+const t = i18n.createReactiveTranslator('home.couple');
 import { Parallax } from 'react-parallax';
 import Fiancee from './Fiancee.jsx';
 
@@ -13,21 +14,21 @@ export default class Couple extends Component {
               <Fiancee
                 name="Isabelle Richard"
                 picture="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/isabelle.jpg"
-                description={i18n.__('home.couple.bride')}
+                description={t('bride')}
               />
             </div>
             <div className="ui vertical divider">
               <img
                 className="ui fluid image"
                 src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/icons/couple.svg"
-                alt={i18n.__('home.banner.title')}
+                alt={t('bride')}
               />
             </div>
             <div className="column">
               <Fiancee
                 name="Diego Zavala"
                 picture="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/diego.jpg"
-                description={i18n.__('home.couple.groom')}
+                description={t('groom')}
               />
             </div>
           </div>

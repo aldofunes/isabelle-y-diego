@@ -1,5 +1,6 @@
 import React from 'react';
 import i18n from 'meteor/universe:i18n';
+const t = i18n.createReactiveTranslator('home.children');
 const markdown = require('markdown-it')({
   xhtmlOut: true, // Use '/' to close single tags (<br />).
   breaks: true, // Convert '\n' in paragraphs into <br>
@@ -13,30 +14,30 @@ export default class Children extends React.Component {
       {
         _id: '1',
         name: 'Diego',
-        bio: i18n.__('home.children.diego'),
+        bio: t('diego'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/diego-junior.jpg',
       },
       {
         _id: '2',
         name: 'Isabelle',
-        bio: i18n.__('home.children.isabelle'),
+        bio: t('isabelle'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/isabelle-hija.jpg',
       },
       {
         _id: '3',
         name: 'Anne Hélène',
-        bio: i18n.__('home.children.anneHelene'),
+        bio: t('anneHelene'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/anne-helene.jpg',
       },
       {
         _id: '4',
         name: 'Catalina',
-        bio: i18n.__('home.children.catalina'),
+        bio: t('catalina'),
         picture: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/catalina.jpg',
       },
     ];
   }
-  
+
   rawMarkup(bio) {
     return { __html: markdown.render(bio) };
   }
