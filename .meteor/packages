@@ -19,7 +19,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 4commerce:env-settings
 
 # Security
-bmgtech:force-ssl-elb
 
 # UI
 semantic:ui
