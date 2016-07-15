@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
-import { TAPi18n } from 'meteor/tap:i18n';
+import i18n from 'meteor/universe:i18n';
 import { Parallax } from 'react-parallax';
 import Fiancee from './Fiancee.jsx';
 
 export default class Couple extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      locale: '',
+    };
+  }
+
+  componentDidMount() {
+    i18n.onChangeLocale((newLocale) => {
+      this.setState({ locale: newLocale });
+    });
+  }
+
   render() {
     return (
       <section id="couple">
@@ -13,21 +26,21 @@ export default class Couple extends Component {
               <Fiancee
                 name="Isabelle Richard"
                 picture="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/isabelle.jpg"
-                description={TAPi18n.__('home.couple.bride')}
+                description={i18n.__('home.couple.bride')}
               />
             </div>
             <div className="ui vertical divider">
               <img
                 className="ui fluid image"
                 src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/icons/couple.svg"
-                alt={TAPi18n.__('home.banner.title')}
+                alt={i18n.__('home.banner.title')}
               />
             </div>
             <div className="column">
               <Fiancee
                 name="Diego Zavala"
                 picture="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/family/diego.jpg"
-                description={TAPi18n.__('home.couple.groom')}
+                description={i18n.__('home.couple.groom')}
               />
             </div>
           </div>

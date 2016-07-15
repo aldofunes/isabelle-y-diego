@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import moment from 'moment-timezone';
-import { TAPi18n } from 'meteor/tap:i18n';
+import i18n from 'meteor/universe:i18n';
 import Stat from './Stat.jsx';
 
 export default class Countdown extends Component {
@@ -8,6 +8,7 @@ export default class Countdown extends Component {
     super(props);
 
     this.state = {
+      locale: '',
       dateReached: moment.tz(this.props.timeZone) >= moment.tz(this.props.givenDate, this.props.timeZone),
     };
   }
@@ -19,6 +20,10 @@ export default class Countdown extends Component {
   }
 
   componentDidMount() {
+    i18n.onChangeLocale((newLocale) => {
+      this.setState({ locale: newLocale });
+    });
+
     if (!this.state.dateReached) {
       setInterval(this.update.bind(this), 1000);
     }
@@ -44,10 +49,10 @@ export default class Countdown extends Component {
       <section id="countdown">
         <div className="ui container">
           <div className="ui four statistics">
-            <Stat label={TAPi18n.__('home.countdown.days')} value={stats.days.toString()}/>
-            <Stat label={TAPi18n.__('home.countdown.hours')} value={stats.hours.toString()}/>
-            <Stat label={TAPi18n.__('home.countdown.minutes')} value={stats.mins.toString()}/>
-            <Stat label={TAPi18n.__('home.countdown.seconds')} value={stats.secs.toString()}/>
+            <Stat label={i18n.__('home.countdown.days')} value={stats.days.toString()}/>
+            <Stat label={i18n.__('home.countdown.hours')} value={stats.hours.toString()}/>
+            <Stat label={i18n.__('home.countdown.minutes')} value={stats.mins.toString()}/>
+            <Stat label={i18n.__('home.countdown.seconds')} value={stats.secs.toString()}/>
           </div>
         </div>
       </section>
