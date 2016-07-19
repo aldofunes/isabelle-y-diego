@@ -1,6 +1,7 @@
 import React from 'react';
 import { TAPi18n } from 'meteor/tap:i18n';
 import i18n from 'meteor/universe:i18n';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 import Footer from '../components/Footer.jsx';
 
 export default class MainLayout extends React.Component {
@@ -19,6 +20,7 @@ export default class MainLayout extends React.Component {
   render() {
     return (
       <div id="main-layout">
+        <LanguageSwitcher />
         {this.props.children}
         <Footer />
       </div>

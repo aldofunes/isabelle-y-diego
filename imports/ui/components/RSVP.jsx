@@ -1,5 +1,5 @@
 import React from 'react';
-
+import i18n from 'meteor/universe:i18n';
 import { insertConfirmation } from '../../api/confirmations/methods.js';
 
 export default class RSVP extends React.Component {
@@ -17,6 +17,13 @@ export default class RSVP extends React.Component {
     $('.message .close').on('click', () => {
       $(this).closest('.message').transition('fade');
     });
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
   }
 
   handleSubmit(event) {
@@ -65,47 +72,23 @@ export default class RSVP extends React.Component {
   resetState() {
     this.setState({
       wasSuccessful: false,
-      errors: null
+      errors: null,
     });
   }
 
-  renderGuestsInput() {
+  render() {
     const guests = [];
     for (let i = 0; i < this.state.guests; i++) {
       guests.push(i);
     }
-    return guests.map((guest) => (
-      <div key={guest} className="ui segment">
-        <div className="three fields">
 
-          <div className="field">
-            <input ref={`firstName${guest}`} type="text" placeholder="Nombre"/>
-          </div>
-
-          <div className="field">
-            <input ref={`lastName${guest}`} type="text" placeholder="Apellido"/>
-          </div>
-
-          <div className="field">
-            <div className="ui checkbox">
-              <input ref={`isGoing${guest}`} type="checkbox" defaultChecked="false"/>
-              <label>Asistirá</label>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    ));
-  }
-
-  render() {
     let successMessage = '';
     if (this.state.wasSuccessful) {
       successMessage = (
         <div className="ui positive message">
           <i className="close icon" onClick={this.resetState.bind(this)}/>
           <i className="check icon"/>
-          Gracias por confirmar tu asistencia.
+          {i18n.__('home.rsvp.form.successMessage')}
         </div>
       );
     }
@@ -128,32 +111,53 @@ export default class RSVP extends React.Component {
 
             <form className="ui form" ref="RSVPForm" onSubmit={this.handleSubmit.bind(this)}>
 
-              <h2>Confirma tu asistencia <small><em>o tu ausencia</em></small></h2>
+              <h2>{i18n.__('home.rsvp.header')} <small><em>{i18n.__('home.rsvp.subHeader')}</em></small></h2>
 
               <div className="field">
-                <input ref="email" type="email" placeholder="Correo electrónico"/>
+                <input ref="email" type="email" placeholder={i18n.__('home.rsvp.form.email')}/>
               </div>
 
-              <h3>Personas a confirmar</h3>
+              <h3>{i18n.__('home.rsvp.form.confirmations')}</h3>
 
-              {this.renderGuestsInput()}
+              {guests.map((guest) => (
+                <div key={guest} className="ui segment">
+                  <div className="three fields">
+
+                    <div className="field">
+                      <input ref={`firstName${guest}`} type="text" placeholder={i18n.__('home.rsvp.form.name')}/>
+                    </div>
+
+                    <div className="field">
+                      <input ref={`lastName${guest}`} type="text" placeholder={i18n.__('home.rsvp.form.lastName')}/>
+                    </div>
+
+                    <div className="field">
+                      <div className="ui checkbox">
+                        <input ref={`isGoing${guest}`} type="checkbox" defaultChecked="false"/>
+                        <label>{i18n.__('home.rsvp.form.isGoing')}</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              ))}
 
               <button
                 type="button"
                 className="ui inverted green icon button"
                 onClick={this.addGuest.bind(this)}
               >
-                <i className="plus icon"/> Agregar
+                <i className="plus icon"/> {i18n.__('home.rsvp.form.addButton')}
               </button>
               <button
                 type="button"
                 className="ui inverted red icon button"
                 onClick={this.removeGuest.bind(this)}
               >
-                <i className="minus icon"/> Quitar
+                <i className="minus icon"/> {i18n.__('home.rsvp.form.removeButton')}
               </button>
 
-              <button type="submit" className="ui inverted blue right floated button">Confirmar</button>
+              <button type="submit" className="ui inverted blue right floated button">{i18n.__('home.rsvp.form.submitButton')}</button>
             </form>
             {errorMessage}
             {successMessage}

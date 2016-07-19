@@ -1,4 +1,5 @@
 import React from 'react';
+import i18n from 'meteor/universe:i18n';
 import { Parallax } from 'react-parallax';
 import Banner from '../components/Banner.jsx';
 import Countdown from '../components/Countdown.jsx';
@@ -17,6 +18,16 @@ import WitnessList from '../components/WitnessList.jsx';
 import WideImage from '../components/WideImage.jsx';
 
 export default class Home extends React.Component {
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
+  }
+
   render() {
     return (
       <div id="home">
@@ -34,26 +45,23 @@ export default class Home extends React.Component {
 
         <WideImage
           image="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego1.jpg"
-          alt="Isabelle y Diego"
-          text="El amor es grandioso"
+          alt={i18n.__('home.wideImage1.alt')}
+          text={i18n.__('home.wideImage1.text')}
         />
 
           <Children />
 
           <WideImage
             image="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/familia.jpg"
-            alt="Hollywood"
-            text="Juntos nos encanta viajar, descubrir nuevos lugares y vivir nuevas experiencias,
-            ver en la televisión o asistir a los partidos de futbol (pero solo de los Dallas Cowboys
-            o del Real Madrid), y festejar juntos los acontecimientos familiares: cumpleaños,
-            Navidad,etc."
+            alt={i18n.__('home.wideImage2.alt')}
+            text={i18n.__('home.wideImage2.text')}
           />
 
         <WitnessList />
 
         <img
           src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego2.jpg"
-          alt="Isabelle y Diego"
+          alt={i18n.__('home.wideImage3.alt')}
           className="ui fluid image"
         />
 
@@ -63,7 +71,7 @@ export default class Home extends React.Component {
 
         <img
           src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/isabelle-diego3.jpg"
-          alt="Isabelle y Diego"
+          alt={i18n.__('home.wideImage4.alt')}
           className="ui fluid image"
         />
 

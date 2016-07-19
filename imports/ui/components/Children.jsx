@@ -7,17 +7,14 @@ const markdown = require('markdown-it')({
 });
 
 export default class Children extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      locale: '',
-    };
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
   }
 
-  componentDidMount() {
-    i18n.onChangeLocale((newLocale) => {
-      this.setState({ locale: newLocale });
-    });
+  componentWillUnmount() {
+    i18n.offChangeLocale();
   }
 
   rawMarkup(bio) {

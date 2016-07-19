@@ -1,7 +1,18 @@
 import React from 'react';
 import $ from 'jquery';
+import i18n from 'meteor/universe:i18n';
 
 export default class Gifts extends React.Component {
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
+  }
+
   showModal() {
     $('.ui.modal#gift').modal('show');
   }
@@ -10,16 +21,11 @@ export default class Gifts extends React.Component {
     return (
       <section id="gifts">
         <div className="ui center aligned container">
-          <h3 className="ui header text-white">
-            Afortunadamente la vida nos ha bendecido y no necesitamos nada; su presencia el día
-            de la boda es el mejor regalo que podamos recibir, y valoramos mucho el esfuerzo en
-            tiempo y recursos que nos brindan al acompañarnos en ese Día tan especial, se lo
-            decimos de todo corazón.
-          </h3>
+          <h3 className="ui header text-white">{i18n.__('home.gifts.header')}</h3>
 
           <button className="ui inverted icon button" onClick={this.showModal}>
             <i className="gift icon"/>
-            En verdad quiero regalarles algo
+            {i18n.__('home.gifts.buttonText')}
             <i className="gift icon"/>
           </button>
         </div>
@@ -33,29 +39,17 @@ export default class Gifts extends React.Component {
           }}
         >
           <i className="close icon"/>
-          <div className="header">
-            ¿En verdad quieres regalarnos algo?
-          </div>
+          <div className="header">{i18n.__('home.gifts.modal.header')}</div>
           <div className="image content">
             <div className="ui fluid image">
               <img src="https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/bgs/wine.jpg"/>
             </div>
             <div className="description">
-              <p>
-                Lo repetimos, el que sean participe del evento es un presente invaluable para
-                nosotros; sin embargo, a las personas que insistirían en llevar algo, podríamos
-                sugerir, considerando nuestros gustos y la ubicación tan peculiar de Jarnioux,
-                traer algo relacionado con el vino, por ejemplo una botella de su selección, que
-                nos dará gusto saborear en recuerdo de la boda.
-              </p>
+              <p>{i18n.__('home.gifts.modal.body')}</p>
             </div>
           </div>
           <div className="actions">
-            <p>
-              Para efectos prácticos pueden llevarla a Jarnioux… o en México, en Lorenzo
-              de la Hidalga 420, Torre Alta 1, piso 12, Col. San Mateo Tlaltenango, CP 05600,
-              Cuajimalpa, DF
-            </p>
+            <p>{i18n.__('home.gifts.modal.footer')}</p>
           </div>
         </div>
       </section>

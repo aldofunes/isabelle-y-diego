@@ -1,9 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
 import i18n from 'meteor/universe:i18n';
-
 import Event from './Event.jsx';
 
-export default class Events extends Component {
+export default class Events extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,6 +14,10 @@ export default class Events extends Component {
     i18n.onChangeLocale((newLocale) => {
       this.setState({ locale: newLocale });
     });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
   }
 
   events() {
@@ -64,7 +67,7 @@ export default class Events extends Component {
   renderEvents() {
     return this.events().map((event) => (
       <div key={event._id} className="column">
-        <Event {...event}/>
+        <Event {...event} />
       </div>
     ));
   }

@@ -3,18 +3,14 @@ import { TAPi18n } from 'meteor/tap:i18n';
 import i18n from 'meteor/universe:i18n';
 
 export default class Banner extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      locale: '',
-    };
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
   }
 
-  componentDidMount() {
-    i18n.onChangeLocale((newLocale) => {
-      this.setState({ locale: newLocale });
-    });
+  componentWillUnmount() {
+    i18n.offChangeLocale();
   }
 
   render() {

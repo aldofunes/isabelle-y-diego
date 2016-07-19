@@ -4,21 +4,18 @@ import i18n from 'meteor/universe:i18n';
 import Stat from './Stat.jsx';
 
 export default class DressCode extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      locale: '',
-    };
-  }
-
   componentDidMount() {
-    i18n.onChangeLocale((newLocale) => {
-      this.setState({ locale: newLocale });
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
     });
   }
 
+  componentWillUnmount() {
+    i18n.offChangeLocale();
+  }
+
   render() {
-    if (this.state.locale === 'fr') {
+    if (i18n.getLocale() === 'fr') {
       return null;
     }
 

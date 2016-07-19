@@ -4,17 +4,14 @@ import { Parallax } from 'react-parallax';
 import Fiancee from './Fiancee.jsx';
 
 export default class Couple extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      locale: '',
-    };
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
   }
 
-  componentDidMount() {
-    i18n.onChangeLocale((newLocale) => {
-      this.setState({ locale: newLocale });
-    });
+  componentWillUnmount() {
+    i18n.offChangeLocale();
   }
 
   render() {

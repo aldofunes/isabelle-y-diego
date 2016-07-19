@@ -3,6 +3,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
 import moment from 'moment/min/moment-with-locales';
+import i18n from 'meteor/universe:i18n';
 
 import Skycon from './Skycon.jsx';
 
@@ -19,11 +20,19 @@ class Forecast extends React.Component {
     });
   }
 
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
+  }
+
   renderDailyForecast() {
     const data = this.props.data.daily.data;
     moment.locale('es');
-
-    data.shift();
 
     let minTemp = data[0].temperatureMin;
     data.forEach((day) => {
@@ -61,11 +70,11 @@ class Forecast extends React.Component {
 
     return (
       <div id="content">
-        <h2>El clima en Jarnioux esta semana</h2>
+        <h2>{i18n.__('home.forecast.header')}</h2>
         <h5>{data.daily.summary}</h5>
         <div className="ui grid">
           <div className="sixteen wide tablet four wide computer column">
-            <h2>Ahora</h2>
+            <h2>{i18n.__('home.forecast.now')}</h2>
             <Skycon
               id={data._id}
               color="white"
@@ -79,7 +88,7 @@ class Forecast extends React.Component {
           </div>
 
           <div className="sixteen wide tablet twelve wide computer column">
-            <div className="ui seven column grid">
+            <div className="ui eight column grid">
               {this.renderDailyForecast()}
             </div>
           </div>

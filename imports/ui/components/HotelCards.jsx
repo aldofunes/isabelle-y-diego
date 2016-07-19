@@ -1,13 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router';
+import i18n from 'meteor/universe:i18n';
 import HotelCard from './HotelCard.jsx';
 
 export default class HotelCards extends React.Component {
-  hotels() {
-    return [
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
+  }
+
+  render() {
+    const hotels = [
       {
         _id: '11',
-        name: 'Sofitel Lyon Bellecour',
+        name: i18n.__('home.hotelCards.hotel1.name'),
         stars: 5,
         location: ' 20 Quai Gailleton, 02. La Presqu\'île, 69002 Lyon, Francia',
         image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/sofitel.jpg',
@@ -16,14 +27,12 @@ export default class HotelCards extends React.Component {
         email: 'H0553@sofitel.com',
         latitude: 45.754312,
         longitude: 4.834180,
-        description: 'Este hotel de 5 estrellas está situado en el corazón de Lyon, a solo 450 ' +
-        'metros de la plaza de Bellecour, que alberga boutiques de lujo. Cuenta con centro de ' +
-        'fitness, gimnasio, hammam y centro de bienestar.',
+        description: i18n.__('home.hotelCards.hotel1.description'),
         price: 4179,
       },
       {
         _id: '4',
-        name: 'La Bastide',
+        name: i18n.__('home.hotelCards.hotel2.name'),
         stars: 3,
         location: 'Le Bourg, 69640 Jarnioux, Francia',
         image: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/hotels/la-bastide.jpg',
@@ -32,39 +41,29 @@ export default class HotelCards extends React.Component {
         email: 'contact@labastidejarnioux.fr',
         latitude: 45.965604,
         longitude: 4.625037,
-        description: 'La Bastide B&B ofrece alojamiento moderno con vistas a un jardín, una ' +
-        'terraza y conexión Wi-Fi gratuita. Ocupa un edificio del siglo XIX situado en ' +
-        'Jarnioux, a escasos 10 km de Villefranche-sur-Saône.',
+        description: i18n.__('home.hotelCards.hotel2.description'),
         price: 2073,
       },
     ];
-  }
 
-  renderHotelCards() {
-    return this.hotels().map((hotel) => (
-      <div key={hotel._id} className="column">
-        <HotelCard {...hotel} />
-      </div>
-    ));
-  }
-
-  render() {
     return (
       <section id="hotels">
         <div className="ui container">
-          <h2 className="ui header">Hoteles</h2>
+          <h2 className="ui header">{i18n.__('home.hotelCards.title')}</h2>
           <div className="ui middle aligned three column stackable grid">
-            {this.renderHotelCards()}
+            {hotels.map((hotel) => (
+              <div key={hotel._id} className="column">
+                <HotelCard {...hotel} />
+              </div>
+            ))}
             <div className="column">
               <div className="ui large vertical buttons" style={{ display: 'block' }}>
                 <a
                   href="https://www.airbnb.com/s/lyon?guests=2&checkin=08%2F12%2F2016&checkout=08%2F14%2F2016&ss_id=74gxsyuz&source=bb&s_tag=4CyBLyfJ"
                   className="ui inverted blue button"
                   target="_blank"
-                >
-                  Lyon y la región en AirBnB
-                </a>
-                <Link to="hotels" className="ui inverted blue button">Más hoteles</Link>
+                >{i18n.__('home.hotelCards.airBnB')}</a>
+                <Link to="hotels" className="ui inverted blue button">{i18n.__('home.hotelCards.more')}</Link>
               </div>
             </div>
           </div>

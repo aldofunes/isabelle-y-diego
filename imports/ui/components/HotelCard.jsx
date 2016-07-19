@@ -4,10 +4,6 @@ import $ from 'jquery';
 
 export default class HotelCard extends React.Component {
   componentDidMount() {
-    $('.ui.rating').rating({
-      maxRating: 5,
-    });
-
     $('.ui.card .dimmable.image').dimmer({
       on: 'hover',
     });
@@ -18,9 +14,6 @@ export default class HotelCard extends React.Component {
       <div className="ui fluid card hotel">
 
         <div className="content">
-          <div className="right floated meta">
-            <div className="ui star rating" data-rating={this.props.stars}></div>
-          </div>
           {this.props.name}
         </div>
 

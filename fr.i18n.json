@@ -1,4 +1,17 @@
 {
+  "menu": {
+    "title": "Menú",
+    "home": "Debút",
+    "countDown": "Compte",
+    "couple": "Les fiancés",
+    "dressCode": "Vêtements",
+    "events": "Jour du mariage",
+    "gifts": "Cadeaux",
+    "rsvp": "RSVP",
+    "forecast": "Temps",
+    "hotels": "Hôtels",
+    "gallery": "Galerie de photos"
+  },
   "home": {
     "banner": {
       "title": "Isabelle et Diego",
@@ -34,13 +47,13 @@
       "title": "Les témoins",
       "bride": {
         "title": "De la mariée",
-        "Jaime": "Le savant fou, le “Géo-trouve-tout” du Mexique! De par ses découvertes en électromagnétisme bien entendu, et pour tout ce qui lui trotte dans la tête ensuite : de la métaphysique à la politique, de la psychologie à l’architecture, de la littérature aux soucis de la vie quotidienne des personnes qui lui sont proches ; un cerveau toujours en pleine activité et avide de nouveautés. Si je l’admire pour cela, j’apprécie en lui bien d’autres choses : généreux en tout, et en premier lieu de son temps, il est toujours là pour écouter, aider, donner un conseil. Médecin de profession, rechercher le bienêtre d’autrui est sa vocation, en commençant par celui de sa merveilleuse famille,  ses collègues de travail et ses amis. Pour ma propre famille et pour moi-même, tu as tant fait, Jaime ! Très cher ami, - et aujourd’hui - très cher associé, je suis infiniment reconnaissante au destin d’avoir fait que nos chemins se croisent.\n",
-        "Berenice": "Cela doit être une erreur de la nature le fait que tu ne sois pas sortie du ventre de ma mère, puisque pour moi tu es tout comme une autre sœur, et tes enfants sont pour mes filles comme d’autres frères et sœurs. Que n’avons-nous pas encore vécu ensemble ? Nous avons habité dans le même lotissement, voyagé ensemble juste toutes les deux, passé des vacances avec nos familles à plusieurs reprises ; nous élevons nos enfants ensemble, nous allons faire du shopping ensemble, nous sortons le soir ensemble quand cela est possible ;  nous pouvons tour à tour pleurer, rire, partager nos bonheurs et nos problèmes,  imaginer de nouveaux business à monter, parler de l’avenir, toujours en nous aidant mutuellement. Super Bérénice,  la seule chose que je puisse souhaiter c’est de pouvoir vivre encore de nombreuses années avec toi de cette manière !\n"
+        "jaime": "Le savant fou, le “Géo-trouve-tout” du Mexique! De par ses découvertes en électromagnétisme bien entendu, et pour tout ce qui lui trotte dans la tête ensuite : de la métaphysique à la politique, de la psychologie à l’architecture, de la littérature aux soucis de la vie quotidienne des personnes qui lui sont proches ; un cerveau toujours en pleine activité et avide de nouveautés. Si je l’admire pour cela, j’apprécie en lui bien d’autres choses : généreux en tout, et en premier lieu de son temps, il est toujours là pour écouter, aider, donner un conseil. Médecin de profession, rechercher le bienêtre d’autrui est sa vocation, en commençant par celui de sa merveilleuse famille,  ses collègues de travail et ses amis. Pour ma propre famille et pour moi-même, tu as tant fait, Jaime ! Très cher ami, - et aujourd’hui - très cher associé, je suis infiniment reconnaissante au destin d’avoir fait que nos chemins se croisent.\n",
+        "berenice": "Cela doit être une erreur de la nature le fait que tu ne sois pas sortie du ventre de ma mère, puisque pour moi tu es tout comme une autre sœur, et tes enfants sont pour mes filles comme d’autres frères et sœurs. Que n’avons-nous pas encore vécu ensemble ? Nous avons habité dans le même lotissement, voyagé ensemble juste toutes les deux, passé des vacances avec nos familles à plusieurs reprises ; nous élevons nos enfants ensemble, nous allons faire du shopping ensemble, nous sortons le soir ensemble quand cela est possible ;  nous pouvons tour à tour pleurer, rire, partager nos bonheurs et nos problèmes,  imaginer de nouveaux business à monter, parler de l’avenir, toujours en nous aidant mutuellement. Super Bérénice,  la seule chose que je puisse souhaiter c’est de pouvoir vivre encore de nombreuses années avec toi de cette manière !\n"
       },
       "groom": {
         "title": "Du marié",
-        "Diego": "Exception faite de mes parents, tu es la personne avec qui j’ai passé le plus de temps dans mon existence. Nous avons vécu des époques de « vaches maigres » (peu) et de « vaches grasses » (les plus nombreuses). Que je sois triste,  inquiet, joyeux ou euphorique, tu m’écoutes toujours, et tu es toujours prêt de moi. J’aime parler avec toi de mes projets professionnels, des sports, de sujets plus personnels, de mes amitiés et de bien d’autres choses encore. J’apprécie que tu m’expliques tes loisirs, tes ambitions, tes problèmes, ta vie en général. Je crois qu’aujourd’hui nous avons beaucoup de choses en commun comme le vélo, la passion pour le football américain et le football soccer, les corridas, le cinéma, la musique  (même si nous n’écoutons pas la même !), et l’Amour pour notre pays, le Mexique. J’apprécie énormément ta présence et ta patience au long des aléas de ma vie. Merci pour être, aujourd’hui encore plus, à mes côtés.\n",
-        "Mauricio": "Nous nous sommes connus en 1980 grâce à des amis en commun. Nous n’avons donc jamais été à l’école ensemble, mais je crois que par la suite, tu as été à mes côtés presqu’à chaque étape de ma vie professionnelle. Tu te souviens, il y a 32 ans de cela, du jour où tu m’as prêté tes bureaux pour « accueillir » ma nouvelle entreprise Hildebrando. Depuis, nous avons partagé d’innombrables « aventures » professionnelles : très positives dans leur majorité, un peu moins glorieuses parfois, « c’est la vie ! »-. Nous sommes voisins à Mexico et à Malinalco, compagnons au ski, au golf ; nous sommes collègues, associés, et tu es aussi parrain de ma fille Anne Hélène. Moi je suis assez grand, toi un peu moins : Isabelle quand elle nous voit de loin dit que nous ressemblons à « Laurel et Hardy » . Même si nous ne sommes pas des comiques, j’aime la comparaison : pour elle, nous sommes inséparables ! Qui aurait dit que la vie allait autant nous rapprocher ? Merci de partager aujourd’hui cette nouvelle aventure avec moi.\n"
+        "diego": "Exception faite de mes parents, tu es la personne avec qui j’ai passé le plus de temps dans mon existence. Nous avons vécu des époques de « vaches maigres » (peu) et de « vaches grasses » (les plus nombreuses). Que je sois triste,  inquiet, joyeux ou euphorique, tu m’écoutes toujours, et tu es toujours prêt de moi. J’aime parler avec toi de mes projets professionnels, des sports, de sujets plus personnels, de mes amitiés et de bien d’autres choses encore. J’apprécie que tu m’expliques tes loisirs, tes ambitions, tes problèmes, ta vie en général. Je crois qu’aujourd’hui nous avons beaucoup de choses en commun comme le vélo, la passion pour le football américain et le football soccer, les corridas, le cinéma, la musique  (même si nous n’écoutons pas la même !), et l’Amour pour notre pays, le Mexique. J’apprécie énormément ta présence et ta patience au long des aléas de ma vie. Merci pour être, aujourd’hui encore plus, à mes côtés.\n",
+        "mauricio": "Nous nous sommes connus en 1980 grâce à des amis en commun. Nous n’avons donc jamais été à l’école ensemble, mais je crois que par la suite, tu as été à mes côtés presqu’à chaque étape de ma vie professionnelle. Tu te souviens, il y a 32 ans de cela, du jour où tu m’as prêté tes bureaux pour « accueillir » ma nouvelle entreprise Hildebrando. Depuis, nous avons partagé d’innombrables « aventures » professionnelles : très positives dans leur majorité, un peu moins glorieuses parfois, « c’est la vie ! »-. Nous sommes voisins à Mexico et à Malinalco, compagnons au ski, au golf ; nous sommes collègues, associés, et tu es aussi parrain de ma fille Anne Hélène. Moi je suis assez grand, toi un peu moins : Isabelle quand elle nous voit de loin dit que nous ressemblons à « Laurel et Hardy » . Même si nous ne sommes pas des comiques, j’aime la comparaison : pour elle, nous sommes inséparables ! Qui aurait dit que la vie allait autant nous rapprocher ? Merci de partager aujourd’hui cette nouvelle aventure avec moi.\n"
       }
     },
     "wideImage3": {
@@ -90,7 +103,7 @@
       "alt": "Isabelle et Diego",
       "text": null
     },
-    "liste de mariage": {
+    "gifts": {
       "header": "Comme vous pouvez l'imaginer, nous sommes déjà installés, et n'avons besoin de rien; votre présence le jour de notre mariage est le plus beau cadeau que vous puissiez nous faire, nous vous le disons du fond du coeur.",
       "buttonText": "Nous voudrions quand même vous offrir quelque chose",
       "modal": {
@@ -133,22 +146,22 @@
     },
     "tourCards": {
       "title": "Tours",
-      "Autres excursions": "Visites dans la región (Nos recommendations)",
+      "more": "Visites dans la región (Nos recommendations)",
       "tour1": {
         "name": "Lyon city pass pour 1, 2 ou 3 jours",
-        "prix": "1 jour: €24.00",
+        "price": "1 jour: €24.00",
         "duration": "1 à 3 jours",
         "description": "Le City Pass, passeport culturel et touristique, est valable 1,2 ou 3 jours et permet un accès gratuit à 32 attractions de Lyon, ainsi qu'un ticket gratuit pour l'ensemble du réseau de transport en commun (métro, bus et tramway et funiculaire). Profitez d'un accès gratuit à 22 musées, notamment le Musée des Beaux-Arts, le musée du textile, le Musée gallo-romain, des visites guidées à pied, croisières, démonstration de soie, audio guides dans 5 langues ou la visite guidée inhabituelle des toits de la Basilique de Fourvière. Une fois à Lyon, faites un peu de shopping et profitez d'une réduction de 10% à la boutique de l'Office du Tourisme. Vous pourrez également profiter d'une réduction sur n'importe quel spectacle à l'Opéra national ainsi que des prix réduits sur plusieurs activités, l'Aquarium et des circuits à vélo."
       },
       "tour2": {
         "name": "Grand Tour du Beaujolais",
-        "prix": "€77.00",
+        "price": "€77.00",
         "duration": "4 h. 30 min",
         "description": "Découvrez toutes les merveilles du Beaujolais. Visite de ses incroyables chapelles et villages, entre autres. Dégustation de vin inclue."
       },
       "tour3": {
         "name": "Lyon city bus",
-        "prix": "€20.00",
+        "price": "€20.00",
         "duration": "1 jour",
         "description": "Découvrez la Ville de Lyon et profitez des magnifiques vues depuis le 2nd étage de l'autobus."
       }
@@ -289,5 +302,9 @@
       "title": "Tours"
     },
     "agencies": "Pour recevoir davantage d'informations sur les visites à réaliser dans Lyon et la région, vous pouvez contacter Sandrine Baeza, amie de la famille qui travaille dans l'agence Thomas Cook de la région de Lyon: <a href=\"mailto:sandrine.baeza@thomascook.fr\">sandrine.baeza@thomascook.fr</a>\n"
+  },
+  "footer": {
+    "title": "Nos sincères remerciements",
+    "body": "Ce site est une gracieuseté de la famille Minutti Funes par"
   }
 }

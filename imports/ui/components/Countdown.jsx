@@ -8,31 +8,40 @@ export default class Countdown extends Component {
     super(props);
 
     this.state = {
-      locale: '',
-      dateReached: moment.tz(this.props.timeZone) >= moment.tz(this.props.givenDate, this.props.timeZone),
+      intervalId: '',
+      dateReached: moment.tz(this.props.timeZone) >=
+      moment.tz(this.props.givenDate, this.props.timeZone),
     };
   }
 
   update() {
     this.setState({
-      dateReached: moment.tz(this.props.timeZone) >= moment.tz(this.props.givenDate, this.props.timeZone),
+      dateReached: moment.tz(this.props.timeZone) >=
+      moment.tz(this.props.givenDate, this.props.timeZone),
     });
   }
 
   componentDidMount() {
-    i18n.onChangeLocale((newLocale) => {
-      this.setState({ locale: newLocale });
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
     });
-
     if (!this.state.dateReached) {
-      setInterval(this.update.bind(this), 1000);
+      this.setState({
+        intervalId: setInterval(this.update.bind(this), 1000),
+      });
     }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalId);
+    i18n.offChangeLocale();
   }
 
   render() {
     const stats = {};
     if (!this.state.dateReached) {
-      const diff = moment.tz(this.props.givenDate, this.props.timeZone) - moment.tz(this.props.timeZone);
+      const diff = moment.tz(this.props.givenDate, this.props.timeZone) -
+        moment.tz(this.props.timeZone);
 
       stats.days = parseInt(diff / (24 * 3600 * 1000), 10);
       stats.hours = parseInt(diff / (3600 * 1000) - (stats.days * 24), 10);
@@ -49,10 +58,10 @@ export default class Countdown extends Component {
       <section id="countdown">
         <div className="ui container">
           <div className="ui four statistics">
-            <Stat label={i18n.__('home.countdown.days')} value={stats.days.toString()}/>
-            <Stat label={i18n.__('home.countdown.hours')} value={stats.hours.toString()}/>
-            <Stat label={i18n.__('home.countdown.minutes')} value={stats.mins.toString()}/>
-            <Stat label={i18n.__('home.countdown.seconds')} value={stats.secs.toString()}/>
+            <Stat label={i18n.__('home.countdown.days')} value={stats.days.toString()} />
+            <Stat label={i18n.__('home.countdown.hours')} value={stats.hours.toString()} />
+            <Stat label={i18n.__('home.countdown.minutes')} value={stats.mins.toString()} />
+            <Stat label={i18n.__('home.countdown.seconds')} value={stats.secs.toString()} />
           </div>
         </div>
       </section>

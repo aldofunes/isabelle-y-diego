@@ -1,7 +1,18 @@
 import React from 'react';
 import $ from 'jquery';
+import i18n from 'meteor/universe:i18n';
 
 export default class Gallery extends React.Component {
+  componentDidMount() {
+    i18n.onChangeLocale(() => {
+      this.forceUpdate();
+    });
+  }
+
+  componentWillUnmount() {
+    i18n.offChangeLocale();
+  }
+
   imagesAll() {
     return [
       {
@@ -202,27 +213,27 @@ export default class Gallery extends React.Component {
       {
         _id: '40',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo1.jpg',
-        description: 'Los abuelos: Mercedes y Diego',
+        description: i18n.__('home.gallery.40'),
       },
       {
         _id: '41',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo2.jpg',
-        description: 'Juan Ignacio y su familia',
+        description: i18n.__('home.gallery.41'),
       },
       {
         _id: '42',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo3.jpg',
-        description: 'Mercedes y su familia',
+        description: i18n.__('home.gallery.42'),
       },
       {
         _id: '43',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo4.jpg',
-        description: 'Pablo y su familia',
+        description: i18n.__('home.gallery.43'),
       },
       {
         _id: '44',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/groom/photo5.jpg',
-        description: 'Rafael y su familia',
+        description: i18n.__('home.gallery.44'),
       },
     ];
   }
@@ -232,27 +243,27 @@ export default class Gallery extends React.Component {
       {
         _id: '45',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo1.jpg',
-        description: 'Louis Richard',
+        description: i18n.__('home.gallery.45'),
       },
       {
         _id: '46',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo2.jpg',
-        description: 'Monique Richard ✝',
+        description: i18n.__('home.gallery.46'),
       },
       {
         _id: '47',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo3.jpg',
-        description: 'Claire-Pascale y su familia',
+        description: i18n.__('home.gallery.47'),
       },
       {
         _id: '48',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo4.jpg',
-        description: 'Pierrette y su familia',
+        description: i18n.__('home.gallery.48'),
       },
       {
         _id: '49',
         url: 'https://d1w4wvwm5jykke.cloudfront.net/IsabelleYDiego/gallery/bride/photo5.jpg',
-        description: 'Anne Cécile y su familia',
+        description: i18n.__('home.gallery.49'),
       },
     ];
   }
@@ -269,11 +280,12 @@ export default class Gallery extends React.Component {
            className="ui fluid rounded image"
            onClick={this.handleClick.bind(this, image._id)}
         >
-          <img src={image.url}/>
+          <img src={image.url} />
         </a>
         <div className="ui basic small modal" id={image._id}>
-          <i className="circular inverted close icon"/>
-          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }} src={image.url}/>
+          <i className="circular inverted close icon" />
+          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }}
+               src={image.url} />
           <h4 style={{ textAlign: 'center' }}>{image.description}</h4>
         </div>
       </div>
@@ -287,11 +299,12 @@ export default class Gallery extends React.Component {
            className="ui fluid rounded image"
            onClick={this.handleClick.bind(this, image._id)}
         >
-          <img src={image.url}/>
+          <img src={image.url} />
         </a>
         <div className="ui basic small modal" id={image._id}>
-          <i className="circular inverted close icon"/>
-          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }} src={image.url}/>
+          <i className="circular inverted close icon" />
+          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }}
+               src={image.url} />
           <h4 style={{ textAlign: 'center' }}>{image.description}</h4>
         </div>
       </div>
@@ -305,11 +318,12 @@ export default class Gallery extends React.Component {
            className="ui fluid rounded image"
            onClick={this.handleClick.bind(this, image._id)}
         >
-          <img src={image.url}/>
+          <img src={image.url} />
         </a>
         <div className="ui basic small modal" id={image._id}>
-          <i className="circular inverted close icon"/>
-          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }} src={image.url}/>
+          <i className="circular inverted close icon" />
+          <img className="ui rounded centered image" style={{ maxHeight: '75vh' }}
+               src={image.url} />
           <h4 style={{ textAlign: 'center' }}>{image.description}</h4>
         </div>
       </div>
