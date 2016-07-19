@@ -1,4 +1,17 @@
 {
+  "menu": {
+    "title": "Menú",
+    "home": "Inicio",
+    "countDown": "Conteo",
+    "couple": "Los novios",
+    "dressCode": "Vestimenta",
+    "events": "Día de la boda",
+    "gifts": "Regalos",
+    "rsvp": "RSVP",
+    "forecast": "Clima",
+    "hotels": "Hoteles",
+    "gallery": "Galería"
+  },
   "home": {
     "banner": {
       "title": "Isabelle y Diego",
@@ -202,7 +215,8 @@
       "46": "Monique Richard ✝",
       "47": "Claire-Pascale y su familia",
       "48": "Pierrette y su familia",
-      "49": "Anne Cécile y su familia"
+      "49": "Anne Cécile y su familia",
+      "50": "Mónica y su familia"
     }
   },
   "hotels": {
@@ -289,5 +303,9 @@
       "title": "Tours"
     },
     "agencies": "Para más opciones e informaciones de excursiones en Lyon y en el Beaujolais, pueden contactar a Sandrine Baeza, amiga de la familia trabajando en la agencia Thomas Cook en la región de Lyon y está a sus órdenes: <a href=\"mailto:sandrine.baeza@thomascook.fr\">sandrine.baeza@thomascook.fr</a>"
+  },
+  "footer": {
+    "title": "Nuestros más sinceros agradecimientos",
+    "body": "Este sitio web es cortesía de la familia Funes Minutti a través de"
   }
 }
