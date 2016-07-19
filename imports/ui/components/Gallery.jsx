@@ -243,6 +243,7 @@ export default class Gallery extends React.Component {
     ];
   }
 
+
   imagesBride() {
     return [
       {
