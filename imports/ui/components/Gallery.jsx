@@ -340,19 +340,19 @@ export default class Gallery extends React.Component {
     return (
       <section id="gallery">
         <div className="ui container">
-          <h2>Conócelos mejor en fotos</h2>
+          <h2>{i18n.__('home.gallery.title')}</h2>
 
-          <h3 className="ui header">Familia de la novia</h3>
+          <h3 className="ui header">{i18n.__('home.gallery.bride')}</h3>
           <div className="ui middle aligned doubling five column centered grid">
             {this.renderImagesBride()}
           </div>
 
-          <h3 className="ui header">Familia del novio</h3>
+          <h3 className="ui header">{i18n.__('home.gallery.groom')}</h3>
           <div className="ui middle aligned doubling five column centered grid">
             {this.renderImagesGroom()}
           </div>
 
-          <h3 className="ui header">Nosotros seis</h3>
+          <h3 className="ui header">{i18n.__('home.gallery.all')}</h3>
           <div className="ui middle aligned doubling five column centered grid">
             {this.renderImagesAll()}
           </div>

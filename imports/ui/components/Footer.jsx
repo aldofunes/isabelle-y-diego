@@ -19,7 +19,7 @@ export default class Footer extends React.Component {
           <h3 className="ui header">{i18n.__('footer.title')}</h3>
           <p>
             {i18n.__('footer.body')}
-            <a href="https://www.bmgtech.io" target="_blank"> BMG Tech</a>. Contacto:
+            <a href="https://www.bmgtech.io" target="_blank"> BMG Tech</a>. {i18n.__('footer.contact')}:
             <a href="mailto:aldo.funes@bmgtech.io"> Aldo Funes</a> y
             <a href="mailto:pamela.viadana@bmgtech.io"> Pamela Viadana</a>.
           </p>

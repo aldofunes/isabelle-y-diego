@@ -2,9 +2,9 @@
   "name": "main",
   "private": true,
   "scripts": {
-    "start": "UNIVERSE_I18N_LOCALES='es, fr' meteor run",
+    "start": "meteor run",
     "build:css": "lessc client/main.less client/main.css --autoprefix='last 2 versions'",
-    "deploy": "cd .deploy && mup deploy"
+    "deploy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy --settings settings.json www.isabelleydiego.com"
   },
   "dependencies": {
     "forecast.io-bluebird": "0.0.1",

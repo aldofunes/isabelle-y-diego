@@ -16,18 +16,34 @@ export default class Menu extends Component {
   }
 
   render() {
-    const items = [
-      { _id: '1', hash: 'banner', icon: 'home', title: i18n.__('menu.home') },
-      { _id: '2', hash: 'countdown', icon: 'clock', title: i18n.__('menu.countDown') },
-      { _id: '3', hash: 'couple', icon: 'users', title: i18n.__('menu.couple') },
-      { _id: '4', hash: 'dress-code', icon: 'tags', title: i18n.__('menu.dressCode') },
-      { _id: '5', hash: 'events', icon: 'calendar', title: i18n.__('menu.events') },
-      { _id: '6', hash: 'gifts', icon: 'gift', title: i18n.__('menu.gifts') },
-      { _id: '7', hash: 'rsvp', icon: 'check', title: i18n.__('menu.rsvp') },
-      { _id: '8', hash: 'forecast', icon: 'rain', title: i18n.__('menu.forecast') },
-      { _id: '9', hash: 'hotels', icon: 'building', title: i18n.__('menu.hotels') },
-      { _id: '10', hash: 'gallery', icon: 'camera', title: i18n.__('menu.gallery') },
-    ];
+    let items = [];
+    if (i18n.getLocale() === 'fr') {
+      items = [
+        { _id: '1', hash: 'banner', icon: 'home', title: i18n.__('menu.home') },
+        { _id: '2', hash: 'countdown', icon: 'clock', title: i18n.__('menu.countDown') },
+        { _id: '3', hash: 'couple', icon: 'users', title: i18n.__('menu.couple') },
+        { _id: '5', hash: 'events', icon: 'calendar', title: i18n.__('menu.events') },
+        { _id: '6', hash: 'gifts', icon: 'gift', title: i18n.__('menu.gifts') },
+        { _id: '7', hash: 'rsvp', icon: 'check', title: i18n.__('menu.rsvp') },
+        { _id: '8', hash: 'forecast', icon: 'rain', title: i18n.__('menu.forecast') },
+        { _id: '9', hash: 'hotels', icon: 'building', title: i18n.__('menu.hotels') },
+        { _id: '10', hash: 'gallery', icon: 'camera', title: i18n.__('menu.gallery') },
+      ];
+    } else {
+      items = [
+        { _id: '1', hash: 'banner', icon: 'home', title: i18n.__('menu.home') },
+        { _id: '2', hash: 'countdown', icon: 'clock', title: i18n.__('menu.countDown') },
+        { _id: '3', hash: 'couple', icon: 'users', title: i18n.__('menu.couple') },
+        { _id: '4', hash: 'dress-code', icon: 'tags', title: i18n.__('menu.dressCode') },
+        { _id: '5', hash: 'events', icon: 'calendar', title: i18n.__('menu.events') },
+        { _id: '6', hash: 'gifts', icon: 'gift', title: i18n.__('menu.gifts') },
+        { _id: '7', hash: 'rsvp', icon: 'check', title: i18n.__('menu.rsvp') },
+        { _id: '8', hash: 'forecast', icon: 'rain', title: i18n.__('menu.forecast') },
+        { _id: '9', hash: 'hotels', icon: 'building', title: i18n.__('menu.hotels') },
+        { _id: '10', hash: 'gallery', icon: 'camera', title: i18n.__('menu.gallery') },
+      ];
+    }
+
 
     return (
       <nav id="main-menu" className="ui dropdown icon top left pointing button brown">
