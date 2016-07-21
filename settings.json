@@ -1,0 +1,23 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MAIL_URL": "smtp://postmaster@mg.isabelleydiego.com:19b456c12e17490ffb813dcd18a3babc@smtp.mailgun.org:587",
+      "NODE_ENV": "production",
+      "ROOT_URL": "https://www.isabelleydiego.com",
+      "UNIVERSE_I18N_LOCALES": "all",
+      "MONGO_URL": "mongodb://isabelleydiego:o4wfjXN2HzkQXmku9B89jfaG@mongodb-0.bmg-tech.3946.mongodbdns.com:27000,mongodb-1.bmg-tech.3946.mongodbdns.com:27000,mongodb-2.bmg-tech.3946.mongodbdns.com:27000/isabelleydiego?replicaSet=Meteor"
+    }
+  },
+  "public": {
+    "app": {
+      "name": "Isabelle y Diego",
+      "author": "BMG Tech",
+      "description": "Sitio sobre la boda de Isabelle Richard y Diego Zavala"
+    }
+  },
+  "mailgun": {
+    "domain": "mg.isabelleydiego.com",
+    "apiKey": "key-28aa417378cc96fdf18c722bc45da465",
+    "listName": "mailing@mg.isabelleydiego.com"
+  }
+}

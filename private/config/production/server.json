@@ -1,7 +1,0 @@
-{
-  "mailgun": {
-    "domain": "mg.isabelleydiego.com",
-    "apiKey": "key-28aa417378cc96fdf18c722bc45da465",
-    "listName": "mailing@mg.isabelleydiego.com"
-  }
-}

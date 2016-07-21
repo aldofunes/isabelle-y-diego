@@ -20,7 +20,7 @@ class LanguageSwitcher extends React.Component {
             Español
           </a>
           <a href="#" onClick={this.changeLanguage.bind(this, 'fr')} className="item">
-            Francais
+            Français
           </a>
         </div>
       </div>
