@@ -4,9 +4,13 @@
   "scripts": {
     "start": "meteor run",
     "build:css": "lessc client/main.less client/main.css --autoprefix='last 2 versions'",
-    "deploy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy --settings settings.json www.isabelleydiego.com"
+    "docker:login": "aws ecr get-login --profile bmgtech | bash",
+    "docker:build": "docker build -t 409566040920.dkr.ecr.us-east-1.amazonaws.com/isabelleydiego:latest .",
+    "docker:push": "docker push 409566040920.dkr.ecr.us-east-1.amazonaws.com/isabelleydiego:latest",
+    "docker": "npm run docker:login && npm run docker:build && npm run docker:push"
   },
   "dependencies": {
+    "@babel/runtime": "^7.5.5",
     "forecast.io-bluebird": "0.0.1",
     "jquery": "^3.1.0",
     "less": "^2.7.1",
