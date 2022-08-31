@@ -21,7 +21,7 @@
     "meteor-node-stubs": "~0.2.3",
     "meteor-react-autoform": "0.2.21",
     "moment": "^2.14.1",
-    "moment-timezone": "^0.5.4",
+    "moment-timezone": "^0.5.35",
     "react": "^15.2.1",
     "react-addons-pure-render-mixin": "^15.2.1",
     "react-dom": "^15.2.1",
